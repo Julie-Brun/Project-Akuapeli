@@ -1,0 +1,103 @@
+body {
+    width: auto;
+    height: auto;
+    margin : 0; 
+    padding: 0; 
+    text-decoration: none;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    color: #3E2278;
+}
+
+/* Section Nos formules */
+
+h2{
+    font-family: 'Indie Flower', cursive;
+    color: #DD897A;
+    font-size: 4em;
+}
+
+#formules{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/Offres.jpg);
+}
+
+#offres{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#découverte, #essentielle, #incontournable{
+    width: 18vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7vw 2vw 2vw 2vw;
+    margin-top: 3vw;
+}
+
+#découverte{
+    background-color: #FACFCE;
+    margin-right: 6vw;
+    margin-left: 8vw;
+}
+
+#essentielle{
+    background-color: #DD897A;
+    margin-right: 6vw;
+    padding: 7vw 2vw 2vw 2vw;
+}
+
+#incontournable{
+    background-color: #AC9FC6;
+}
+
+h3{
+    font-size: 1.700em; 
+    font-weight: 600;
+    margin: 0; 
+}
+
+#découverte, #essentielle, #incontournable{
+font-size: 1.125em;
+}
+
+.price{
+    font-size: 1.300em;
+    font-weight: 600;  
+    margin-top: 2vw; 
+}
+
+.lirePlus{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 100vh;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1.5px  #3E2278 solid;
+    margin-top: 3vw;
+}
+
+.lirePlus p {
+    font-size: 0.875;
+    font-weight: 600;
+    margin: 0;
+}
+
+#plus{
+    font-size: 1.5em;
+    font-weight: 400;
+}
