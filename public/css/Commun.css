@@ -1,7 +1,15 @@
 .questionBox{
     background: #FACFCE;
+    height: 15vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
 }
 
 .questionBox h3{
     font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+    margin: 5px;
 }
