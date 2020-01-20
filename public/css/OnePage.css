@@ -18,3 +18,9 @@ h2{
     color: #DD897A;
     font-size: 3em;
 }
+
+#offre{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
