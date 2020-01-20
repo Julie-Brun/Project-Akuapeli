@@ -13,14 +13,109 @@ body {
 
 /* Section Piliers */
 
+#offresSection{
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
 h2{
     font-family: 'Indie Flower', cursive;
     color: #DD897A;
     font-size: 3em;
+    margin-top: 0;
 }
 
-#offre{
+#offreContainer{
     width: 100%;
-    height: 100vh;
-    display: flex;
+    display: flex;  
 }
+
+#leftDiv{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+}
+
+#centerDiv{
+    width: 33%;
+    position: relative;
+}
+
+#bienManger{
+    position: absolute; 
+    left: 18vw;
+    top: 3vh;
+}
+
+#bienEtre{
+    position: absolute; 
+    bottom: -11vh; 
+}
+
+#bio{
+    position: absolute; 
+    left: 18vw;
+    top: 25vh; 
+}
+
+#bienMangerLight{
+    display: none;
+    position: absolute; 
+    left: 18vw;
+    top: 3vh;
+}
+
+#bienEtreLight{
+    display: none;
+    position: absolute; 
+    bottom: -11vh; 
+}
+
+#bioLight{
+    display: none;
+    position: absolute; 
+    left: 18vw;
+    top: 25vh; 
+}
+
+#rightDiv{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+}
+
+#explication-bienEtre, #explication-biodiversité, #explication-bienManger{
+    width: 20vw;
+    height: 30vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: #FACFCE;
+    font-size: 1.06em;
+    text-align: center;
+    padding: 1vw; 
+}
+
+#leftDiv #explication-biodiversité{
+    position: absolute; 
+    top: 52vh; 
+    left: 30vw;
+}
+
+#offreContainer h3{
+    background-color: #674F98;
+    color: #ffffff;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    font-size: 1.37em ;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
