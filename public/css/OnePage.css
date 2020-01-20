@@ -4,9 +4,9 @@ body {
     margin : 0; 
     padding: 0; 
     text-decoration: none;
-    /* display: flex; 
+    display: flex; 
     flex-direction: column;
-    align-items: center; */
+    align-items: center;
     font-family: 'Barlow', sans-serif;
     color: #3E2278;
 }
@@ -20,42 +20,62 @@ h2{
 /* Section Potagers */
 
 #potagers{
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #potagersContent{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 80%;
-    height: 110vh;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column; 
+    position: relative;
+}
+
+.potagersBox{
+    /* border: 2px solid orange; */
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    
+    /* position: relative; */
+}
+
+#comment{
+    height: 15vw;
+}
+
+#enfantsaupotager{
+    margin-left: 8vw; 
 }
 
 #potagersText{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 30vw;
     background: #DD897A;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 3vw;
+    position: absolute;
+    margin-left: 35vw;
 }
 
 #potagersText p{
-    margin: 20px;
+    margin: 10px;
 }
 
-.potagersBox{
-    border: 2px solid orange;
-    width: 50%;
-    height: 110vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+#commentBox{
+    margin-left: 12vw;
 }
+
+#potagersArrow{
+    position: absolute;
+    margin-left: 48vw;
+    margin-top: -20vh;
+}
+
+
