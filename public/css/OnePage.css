@@ -1,26 +1,6 @@
-body {
-    width: auto;
-    height: auto;
-    margin : 0; 
-    padding: 0; 
-    text-decoration: none;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Barlow', sans-serif;
-    color: #3E2278;
-}
-
-h2{
-    font-family: 'Indie Flower', cursive;
-    color: #DD897A;
-    font-size: 3em;
-}
-
 /* Section Potagers */
 
 #potagers{
-    /* border: 2px solid red; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -28,7 +8,6 @@ h2{
 }
 
 #potagersContent{
-    /* border: 2px solid green; */
     width: 80%;
     display: flex;
     flex-direction: column; 
@@ -36,11 +15,9 @@ h2{
 }
 
 .potagersBox{
-    /* border: 2px solid orange; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* position: relative; */
 }
 
 #comment{
@@ -52,7 +29,6 @@ h2{
 }
 
 #potagersText{
-    /* border: 2px solid blue; */
     width: 30vw;
     background: #DD897A;
     display: flex;
@@ -78,4 +54,27 @@ h2{
     margin-top: -20vh;
 }
 
+/* Section Potagers - Comment ça marche? */
+
+#commentçamarche{
+    border: 3px solid salmon;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#commentçamarche .commentStep{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#commentçamarche .commentStep .commentImg{
+    size: 100%;
+    border-radius: 50%;
+    width: 20vw;
+    height: 45vh;
+}
 
