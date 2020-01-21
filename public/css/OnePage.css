@@ -40,7 +40,7 @@ img{
     background-color: #FACFCE; 
     position: absolute;
     right: 50vw;
-    top: 12vh;
+    top: 11.5vh;
     z-index: 2;
 }
 
@@ -70,6 +70,6 @@ img{
 }
 
 #containerTexte #sentence{
-    font-family: 'Indie Flower', cursive;
+    font-weight: 600;
 }
 
