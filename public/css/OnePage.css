@@ -56,25 +56,69 @@
 
 /* Section Potagers - Comment ça marche? */
 
+#comment{
+    width: 100%;
+    position: relative;
+}
+
+#pinkBlock{
+    background-color: #FDEDED;
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 34vh;
+    
+}
+
 #commentçamarche{
-    border: 3px solid salmon;
-    width: 80%;
+    width: 80vw;
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
+    margin-left: 13vw;
 }
 
 #commentçamarche .commentStep{
+    height: 80vh;
     width: 33%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    position: relative; 
+}
+
+#commentçamarche .commentStep h3{
+    font-size: 1.37em;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #DD897A;
+    color: #ffffff;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    position: absolute;
+    right: 15vw;
 }
 
 #commentçamarche .commentStep .commentImg{
-    size: 100%;
     border-radius: 50%;
-    width: 20vw;
-    height: 45vh;
+    width: 18vw;
+    height: 40vh;
+}
+
+#commentçamarche .commentStep p{
+    margin-top: 4vh;
+    text-align: center;
+    padding: 0.5vw 3vw;
+}
+
+#step1{
+    align-self: flex-end;
+}
+
+#step2{
+    align-self: center;
+}
+
+#step3{
+    align-self: flex-start;
 }
 
