@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-#comment{
+#potagersBoxSize{
     height: 15vw;
 }
 
@@ -57,8 +57,8 @@
 /* Section Potagers - Comment ça marche? */
 
 #comment{
-    width: 100%;
     position: relative;
+    width: 100%;
 }
 
 #pinkBlock{
@@ -66,8 +66,7 @@
     width: 100%;
     height: 30vh;
     position: absolute;
-    top: 34vh;
-    
+    top: 34vh;   
 }
 
 #commentçamarche{
@@ -121,4 +120,12 @@
 #step3{
     align-self: flex-start;
 }
+
+/* Section Potagers - Icônes */
+
+/* #icones{
+    display: none;
+    
+} */
+
 
