@@ -60,39 +60,4 @@ font-size: 1.125em;
     margin-top: 2vw; 
 }
 
-button{
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 8vw;
-    height: 13vh;
-    border-radius: 50%;
-    background-color: #ffffff;
-    border: 1.5px  #3E2278 solid;
-    margin-top: 3vw;
-    color: #3E2278;
-}
-
-#découverte button p {
-    font-size: 0.875;
-    font-weight: 600;
-    margin: 0;
-}
-#essentielle button p {
-    font-size: 0.875;
-    font-weight: 600;
-    margin: 0;
-}
-#incontournable button p {
-    font-size: 0.875;
-    font-weight: 600;
-    margin: 0;
-}
-
-#plus{
-    font-size: 1.5em;
-    font-weight: 400;
-}
-
 @media screen and (max-width: 800px){}
