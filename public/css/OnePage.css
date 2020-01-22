@@ -1,0 +1,64 @@
+/* Section Supplément */
+
+#supplement{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vw;
+}
+
+#supplement p {
+    width: 35vw;
+    font-size: 1.125em;
+    text-align: center;
+}
+
+#sectionSupplement{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 4vw;
+}
+
+#containerMallette{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containerEvenements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containerMallette, #containerEvenements p{
+    text-align: center;
+}
+
+#imageMallette, #imageEvenement{
+    margin-top: 3vw;
+}
+
+#imageMallette img{
+    border-radius: 50%;
+}
+
+#imageEvenement img{
+    border-radius: 50%;
+}
+
+#imageMallette button {
+    position: absolute;
+    bottom: 16Vh;
+    left: 30vw;
+}
+
+#imageEvenement button {
+    position: absolute;
+    bottom: 16Vh;
+    left: 65vw;
+}
