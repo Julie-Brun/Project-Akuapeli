@@ -11,6 +11,55 @@ body {
     color: #3E2278;
 }
 
+/* Header */
+
+header {
+    width: 100%;
+    height: 14vh;
+    background: #FDEDED;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.125em;
+}
+
+header #menu {
+    display: none;
+}
+
+header .headerSection {
+    width: 30%;
+    height: 14vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .headerSection a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #3E2278;
+}
+
+header #logo {
+    width: 40%;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header #logo h1 {
+    margin: 0;
+    font-family: 'Schoolbell', cursive;
+    font-size: 2.5em;
+    color: #DD897A;
+}
+
+/* Section principale */
+
 main{
     width: 100%;
     display: flex;
@@ -58,4 +107,98 @@ button p {
 #plus{
     font-size: 1.5em;
     font-weight: 400;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FDEDED;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Newsletter du Footer */
+footer #newsletter {
+    width: 51vw;
+    height: 28vh;
+    margin: 6% 0 6% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FACFCE;
+    font-size: 1.5em;
+    color: #3E2278;
+}
+
+footer #newsletter #newsletterForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer #newsletter #newsletterForm #input input {
+    width: 30vw;
+    height: 4vh;
+    background: #FACFCE;
+    border: none;
+    border-bottom: 1px solid #674F98;
+}
+
+footer #newsletter #newsletterForm #input input::placeholder {
+    color: rgba(62, 34, 120, 0.5);
+    font-size: 1.5em;
+}
+
+footer #newsletter #newsletterForm #input button {
+    width: 8vw;
+    height: 6vh;
+    background: #674F98;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875em;
+}
+
+footer #newsletter #newsletterForm #checkbox label {
+    font-size: 0.6em;
+}
+
+/* Reste du Footer */
+footer #infosFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer #infosFooter p {
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    font-size: 4em;
+    color: #DD897A;
+}
+
+footer #infosFooter ul li {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5em;
+    list-style: none;
+}
+
+footer #infosFooter ul li a {
+    color: #DD897A;
+    text-decoration: none;
+}
+
+footer #infosFooter div {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
