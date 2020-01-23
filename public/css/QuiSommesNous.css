@@ -1,0 +1,43 @@
+#quiSommesNous{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8vw;
+}
+
+#quoteEtPhotos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#quoteEtPhotos h2{
+    font-family: 'Barlow', sans-serif;
+    font-size: 3.75em;
+    font-weight: 600;
+    color: #3E2278; 
+}
+
+#quoteEtPhotos #blocQuote{
+    width: 52%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DD897A;
+    margin-top: 4.5vw;
+}
+
+#quoteEtPhotos #photoEntrepreneure{
+    position: absolute;
+    right:75vw;
+    bottom: 19vw;
+}
+
+#quiSommesNous #paraQuiSommesNous p {
+    font-size: 1.875em;
+    width: 40%;
+    margin-left: 40vw;
+}
