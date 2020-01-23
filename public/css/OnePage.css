@@ -1,3 +1,411 @@
+
+/* Partie Accueil */
+
+#accueil{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containerPrincipal{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 5vw 0 0 0;
+}
+
+#blocCouleur{
+    background-color: #DD897A;
+    width: 30vw;
+    height: 70vh;
+    position: absolute;
+    top: -3.5vh;
+}
+
+img{
+    z-index: 1;
+    position: absolute;
+    left: 47vw;
+    top: 5vh;
+}
+
+#boxInfo{
+    width: 30vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FACFCE; 
+    position: absolute;
+    right: 50vw;
+    top: 11.5vh;
+    z-index: 2;
+}
+
+#boxInfo h2{
+    color: #3E2278;
+    font-weight: 500;
+    padding: 2vw;
+    font-size: 3em;
+}
+
+#boxInfo #boutonViolet{
+    font-size: 1.375em;
+}
+
+#containerTexte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#containerTexte #lieux{
+    font-weight: 600;
+}
+
+#containerTexte #sentence{
+    font-weight: 600;
+}
+  
+  /* Section Piliers */
+
+#piliersSection{
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+  
+#piliersContainer{
+    width: 100%;
+    display: flex;  
+}
+
+#leftDiv{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+}
+
+#centerDiv{
+    width: 33%;
+    position: relative;
+}
+
+#bienManger{
+    position: absolute; 
+    left: 18vw;
+    top: 3vh;
+}
+
+#bienEtre{
+    position: absolute; 
+    bottom: -11vh; 
+}
+
+#bio{
+    position: absolute; 
+    left: 18vw;
+    top: 25vh; 
+}
+
+#bienMangerLight{
+    display: none;
+    position: absolute; 
+    left: 18vw;
+    top: 3vh;
+}
+
+#bienEtreLight{
+    display: none;
+    position: absolute; 
+    bottom: -11vh; 
+}
+
+#bioLight{
+    display: none;
+    position: absolute; 
+    left: 18vw;
+    top: 25vh; 
+}
+
+#rightDiv{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+}
+
+#explication-bienEtre, #explication-biodiversité, #explication-bienManger{
+    width: 20vw;
+    height: 30vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: #FACFCE;
+    font-size: 1.06em;
+    text-align: center;
+    padding: 1vw; 
+}
+
+#leftDiv #explication-biodiversité{
+    position: absolute; 
+    top: 52vh; 
+    left: 30vw;
+}
+
+#piliersContainer h3{
+    background-color: #674F98;
+    color: #ffffff;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    font-size: 1.37em ;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+ 
+/* Section Potagers */
+
+#potagers{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+#potagersContent{
+    width: 80%;
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+}
+
+.potagersBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#potagersBoxSize{
+    height: 15vw;
+}
+
+#enfantsaupotager{
+    margin-left: 8vw; 
+}
+
+#potagersText{
+    width: 30vw;
+    background: #DD897A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+    position: absolute;
+    margin-left: 35vw;
+}
+
+#potagersText p{
+    margin: 10px;
+}
+
+#commentBox{
+    margin-left: 12vw;
+}
+
+#potagersArrow{
+    position: absolute;
+    margin-left: 48vw;
+    margin-top: -20vh;
+}
+
+/* Section Potagers - Comment ça marche? */
+
+#comment{
+    position: relative;
+    width: 100%;
+}
+
+#pinkBlock{
+    background-color: #FDEDED;
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 34vh;   
+}
+
+#commentçamarche{
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    margin-left: 13vw;
+}
+
+#commentçamarche .commentStep{
+    height: 80vh;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+#commentçamarche .commentStep h3{
+    font-size: 1.37em;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #DD897A;
+    color: #ffffff;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    position: absolute;
+    right: 15vw;
+}
+
+#commentçamarche .commentStep .commentImg{
+    border-radius: 50%;
+    width: 18vw;
+    height: 40vh;
+}
+
+#commentçamarche .commentStep p{
+    margin-top: 4vh;
+    text-align: center;
+    padding: 0.5vw 3vw;
+}
+
+#step1{
+    align-self: flex-end;
+}
+
+#step2{
+    align-self: center;
+}
+
+#step3{
+    align-self: flex-start;
+}
+
+/* Section Potagers - Icônes */
+
+#icones{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    width: 80%; 
+    margin-left: 10vw;
+}
+
+.iconeBox{
+    height: 70vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.iconeImg{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.iconeImg img{
+    width: 80%;
+}
+
+.iconeTitle{
+    font-family: 'Indie Flower', cursive;
+    height: 10vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.iconeParagraph{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2%;
+}
+  
+  /* Section Nos formules */
+
+#formules{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/Offres.jpg);
+}
+
+#offres{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#découverte, #essentielle, #incontournable{
+    width: 18vw;
+    height: 40vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 7vw 2vw 2vw 2vw;
+    margin-top: 3vw;
+    font-size: 1.125em;
+}
+
+#découverte{
+    background-color: #FACFCE;
+    margin-right: 6vw;
+    margin-left: 8vw;
+}
+
+#essentielle{
+    background-color: #DD897A;
+    margin-right: 6vw;
+    padding: 7vw 2vw 2vw 2vw;
+}
+
+#incontournable{
+    background-color: #AC9FC6;
+}
+
+h3{
+    font-size: 1.700em; 
+    font-weight: 600;
+    margin: 0; 
+}
+
+.price{
+    font-size: 1.300em;
+    font-weight: 600;  
+    margin-top: 2vw; 
+}
+
+@media screen and (max-width: 800px){}
+
 /* Section Supplément */
 
 #supplement{
@@ -62,3 +470,4 @@
     bottom: 16Vh;
     left: 65vw;
 }
+
