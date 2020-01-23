@@ -1,0 +1,72 @@
+/* Partie Accueil */
+
+#accueil{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containerPrincipal{
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 5vw 0 0 0;
+}
+
+#blocCouleur{
+    background-color: #DD897A;
+    width: 30vw;
+    height: 70vh;
+    position: absolute;
+    top: -3.5vh;
+}
+
+img{
+    z-index: 1;
+    position: absolute;
+    left: 47vw;
+    top: 5vh;
+}
+
+#boxInfo{
+    width: 30vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FACFCE; 
+    position: absolute;
+    right: 50vw;
+    top: 11.5vh;
+    z-index: 2;
+}
+
+#boxInfo h2{
+    color: #3E2278;
+    font-weight: 500;
+    padding: 2vw;
+    font-size: 3em;
+}
+
+#boxInfo #boutonViolet{
+    font-size: 1.375em;
+}
+
+#containerTexte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#containerTexte #lieux{
+    font-weight: 600;
+}
+
+#containerTexte #sentence{
+    font-weight: 600;
+}
+
