@@ -343,6 +343,66 @@ img{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 2%;}
+    padding: 2%;
+}
+  
+  /* Section Nos formules */
 
+#formules{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/Offres.jpg);
+}
+
+#offres{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#découverte, #essentielle, #incontournable{
+    width: 18vw;
+    height: 40vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 7vw 2vw 2vw 2vw;
+    margin-top: 3vw;
+    font-size: 1.125em;
+}
+
+#découverte{
+    background-color: #FACFCE;
+    margin-right: 6vw;
+    margin-left: 8vw;
+}
+
+#essentielle{
+    background-color: #DD897A;
+    margin-right: 6vw;
+    padding: 7vw 2vw 2vw 2vw;
+}
+
+#incontournable{
+    background-color: #AC9FC6;
+}
+
+h3{
+    font-size: 1.700em; 
+    font-weight: 600;
+    margin: 0; 
+}
+
+.price{
+    font-size: 1.300em;
+    font-weight: 600;  
+    margin-top: 2vw; 
+}
+
+@media screen and (max-width: 800px){}
 
