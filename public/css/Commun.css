@@ -110,19 +110,7 @@ h2{
     margin: 0;
 }
 
-.lirePlus p {
-    font-size: 0.875;
-    font-weight: 600;
-    margin: 0;
-}
-
-.lirePlus p {
-    font-size: 0.875;
-    font-weight: 600;
-    margin: 0;
-}
-
-#plus {
+.plus {
     font-size: 1.5em;
     font-weight: 400;
 }
@@ -148,6 +136,10 @@ footer {
 
 /* Newsletter du Footer */
 
+/* footer{
+    display: none;
+} */
+
 footer #newsletter {
     width: 51vw;
     height: 28vh;
@@ -158,7 +150,7 @@ footer #newsletter {
     justify-content: center;
     align-items: center;
     background: #FACFCE;
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: #3E2278;
 }
 
