@@ -51,11 +51,8 @@ img{
     font-size: 3em;
 }
 
-#boxInfo button{
-    background-color: #674F98;
-    color: #ffffff;
+#boxInfo #boutonViolet{
     font-size: 1.375em;
-    padding: 1vw 3vw;
 }
 
 #containerTexte{
