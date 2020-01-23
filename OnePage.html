@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,49 @@
     <title>Document</title>
 </head>
 <body>
+  
+   <!-- Header -->
+    <header id="headerContainer">
+        <img id="menu" src="./ressources/images/menu2.png" alt="Menu Burger">
 
-    <!-- Section Les piliers -->
+        <div class="headerSection">
+            <a href="#">Qui sommes-nous ?</a>
+            <a href="#">Nos offres</a>
+        </div>
 
+        <div id="logo">
+            <img src="./ressources/images/LogoProvisoire.png" alt="Logo Akuapéli">
+            <h1>Akuapéli</h1>
+        </div>
+
+        <div class="headerSection">
+            <a href="#">Les malettes</a>
+            <a href="#">Les évènements</a>
+        </div>
+    </header>
     <main>
+      
+      <!-- Section Accueil -->
+      
+        <section id="accueil">
+            <div id="containerPrincipal">
+                <div id="boxInfo">
+                    <h2>Se connecter à la nature et à soi</h2>
+                    <button id="boutonViolet">Découvrir nos ateliers</button>
+                </div>
+                <div id="blocCouleur"></div>
+                <img src="public/img/Accueil.png" alt="Photo atelier avec des enfants">
+            </div>
+            <div id="containerTexte">
+                <p>Nous proposons aux enfants de 3 à 10 ans des ateliers de découverte
+                    de la nature au fil des saisons.</p>
+                <p id="lieux"> • Entreprises  • Ecoles  •  Lieux de loisirs  •</p>
+                <p id="sentence">Tous ceux qui souhaitent s’engager</p>
+            </div>
+        </section>
+      
+       <!-- Section Les piliers -->
+
         <section id="piliersSection" >
             <h2> Notre vision</h2>
             <div id="piliersContainer">
@@ -51,7 +91,46 @@
                 </div>
             </div>
         </section>
-    </main>
-    
+  </main>
+  
+    <!-- Footer -->
+    <footer id="footerContainer">
+        <div id="newsletter">
+            <p>Notre newsletter, pour suivre tous nos ateliers !</p>
+            <form id="newsletterForm" action="#">
+                <div id="input">
+                    <input type="text" placeholder="Votre email">
+                    <button>S'inscrire</button>
+                </div>
+                <div id="checkbox">
+                    <input type="checkbox" name="#" id="conditions">
+                    <label for="conditions">Notre newsletter, pour suivre tous nos ateliers !</label>
+                </div>
+            </form>
+        </div>
+
+        <div id="infosFooter">
+            <p>Akuapéli</p>
+
+            <ul id="arbo">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Piliers</a></li>
+                <li><a href="#">Le Potager</a></li>
+                <li><a href="#">Nos Offres</a></li>
+                <li><a href="#">Aller plus loin</a></li>
+            </ul>
+
+            <ul id="etc">
+                <li><a href="#">Qui sommes-nous ?</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Mentions Légales</a></li>
+            </ul>
+
+            <div id="socialNetworks">
+                <a href="#"><img src="./ressources/images/FB.png" alt="Logo Facebook"></a>
+                <a href="#"><img src="./ressources/images/Insta.png" alt="Logo Instagram"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
