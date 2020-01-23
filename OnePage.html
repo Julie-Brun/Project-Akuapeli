@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,45 +10,264 @@
     <link rel="stylesheet" href="public/css/Commun.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,400i,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Akuapéli</title>
 </head>
 <body>
+  
+   <!-- Header -->
+    <header id="headerContainer">
+        <img id="menu" src="./ressources/images/menu2.png" alt="Menu Burger">
 
-    <!-- Section Nos Formules -->
-<main>   
-    <h2>Nos Formules</h2>
-    <section id="formules">
-            <div id="offres">
-                <div id="découverte">
-                    <h3>DECOUVERTE</h3>
-                    <p>Le potager, tout simplement</p>
-                    <p class="price">12€ HT/enfant (1h)</p>
-                    <button class="lirePlus">
-                        <p id="plus">+</p>
-                        <p>LIRE PLUS</p>
-                    </button>
+        <div class="headerSection">
+            <a href="#">Qui sommes-nous ?</a>
+            <a href="#">Nos offres</a>
+        </div>
+
+        <div id="logo">
+            <img src="./ressources/images/LogoProvisoire.png" alt="Logo Akuapéli">
+            <h1>Akuapéli</h1>
+        </div>
+
+        <div class="headerSection">
+            <a href="#">Les malettes</a>
+            <a href="#">Les évènements</a>
+        </div>
+    </header>
+  
+    <main>
+      
+      <!-- Section Accueil -->
+      
+        <section id="accueil">
+            <div id="containerPrincipal">
+                <div id="boxInfo">
+                    <h2>Se connecter à la nature et à soi</h2>
+                    <button id="boutonViolet">Découvrir nos ateliers</button>
                 </div>
-                <div id="essentielle">
-                    <h3>ESSENTIELLE</h3>
-                    <p>Le potager, un atout essentiel</p>
-                    <p class="price">15€ HT/enfant (1h30)</p>
-                    <button class="lirePlus">
-                        <p id="plus">+</p>
-                        <p>LIRE PLUS</p>
-                    </button>
+                <div id="blocCouleur"></div>
+                <img src="public/img/Accueil.png" alt="Photo atelier avec des enfants">
+            </div>
+            <div id="containerTexte">
+                <p>Nous proposons aux enfants de 3 à 10 ans des ateliers de découverte
+                    de la nature au fil des saisons.</p>
+                <p id="lieux"> • Entreprises  • Ecoles  •  Lieux de loisirs  •</p>
+                <p id="sentence">Tous ceux qui souhaitent s’engager</p>
+            </div>
+        </section>
+      
+       <!-- Section Les piliers -->
+
+        <section id="piliersSection" >
+            <h2> Notre vision</h2>
+            <div id="piliersContainer">
+                <div id="leftDiv">
+                    <div id="explication-bienEtre">
+                        <h3>Bien-être</h3>
+                        <p>Nous accompagnons chaque enfant à mobiliser ses propres ressources de bien-être 
+                        à travers la découverte des émotions, les pratiques de l’attention et la méditation. </p>
+                    </div>
+                    <div id="explication-biodiversité">
+                        <h3>Biodiversité</h3>
+                        <p>Nous invitons chaque enfant 
+                        à explorer le vivant, comprendre les et prendre soin  </p>
+                    </div>
                 </div>
-                <div id="incontournable">
-                    <h3>EXPLORATION</h3>
-                    <p>Un moment incontournable</p>
-                    <p class="price">25€ HT/enfant (2h30)</p>
-                    <button class="lirePlus">
-                        <p id="plus">+</p>
-                        <p>LIRE PLUS</p>
-                    </button>
+
+                <div id="centerDiv">
+                    <img id="bienManger" src="public/img/leaf bien-manger.png" alt="Illustration de feuille">
+                    <img id="bienEtre" src="public/img/leaf bien-être.png" alt="Illustration de feuille">
+                    <img id="bio" src="public/img/leaf biodiversité.png" alt="Illustration de feuille">
+                    <img id="bienMangerLight" src="public/img/leaf bien-manger light.png" alt="Illustration de feuille">
+                    <img id="bienEtreLight" src="public/img/leaf bien-être light.png" alt="Illustration de feuille">
+                    <img id="bioLight" src="public/img/biodiversité light.png" alt="Illustration de feuille">
+                </div>
+
+                <div id="rightDiv">
+                    <div id="explication-bienManger">
+                        <h3>Bien-manger</h3>
+                        <p>Nous proposons aux enfants de découvrir les produits de saison 
+                        et propageons le plaisir de cuisiner local et de saison. 
+                        Éveiller les papilles, éveiller les sens, revisiter les produits oubliés  </p>
+                    </div>
+
                 </div>
             </div>
-    </section>
-</main> 
+        </section>
+      
+        <!-- Section Potagers -->
+
+        <section id="potagers">
+            <h2>Votre potager au fil des saisons</h2>
+            <div id="potagersContent">
+                <div class="potagersBox">
+                    <img src="public/img/enfants&potagers.png" alt="enfants au potager" id="enfantsaupotager">
+                    <div id="potagersText">
+                        <p>Dans votre école nous vous accompagnons dans la création, l’exploration et l’entretien de votre potager.</p>
+                        <p>En intérieur et en extérieur,  les enfants cultivent dans des sacs : des fruits, des légumes, des aromates et des fleurs comestibles au fil des saisons</p>
+                    </div>
+                </div>
+                <div class="potagersBox" id="potagersBoxSize">
+                    <div class="questionBox" id="commentBox">
+                        <p>Comment ça marche?</p>
+                        <img src="public/img/gribouillis.png" alt="soulignement dessiné à la main">
+                    </div>
+                    <img src="public/img/flèche.png" id="potagersArrow">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Potagers - Comment ça marche? -->
+
+        <section id="comment">
+            <div id="pinkBlock"></div>
+            <div id="commentçamarche">
+                <div class="commentStep" id="step1">
+                    <img src="public/img/Plante1.png" alt="plante à une feuille dessinée à la main" class="commentPlant" id="plant1">
+                    <h3>confectionner</h3>
+                    <img src="public/img/confectionner.jpg" alt="enfants en train de confectionner les potagers" class="commentImg">
+                    <p>Choisissez votre taille (mini, moyen ou maxi) et personnalisez votre potager </p>
+                </div>
+                <div class="commentStep" id="step2">
+                    <img src="public/img/Plante2.png" alt="plante à deux feuilles dessinée à la main" class="commentPlant" id="plant2">
+                    <h3>planter</h3>
+                    <img src="public/img/planter.jpg" alt="enfants en train de planter dans le potager" class="commentImg">
+                    <p>Sélectionnez vos légumes, vos fruits, vos fleurs comestibles et aromates</p>
+                </div>
+                <div class="commentStep" id="step3">
+                    <img src="public/img/Plante3.png" alt="plante à trois feuilles dessinée à la main" class="commentPlant" id="plant3">
+                    <h3>déguster</h3>
+                    <img src="public/img/enfants&potagers.png" alt="enfants" class="commentImg">
+                    <p>Récoltez & Régalez vos papilles, Récoltez & Régalez vos papilles</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Potagers - Icônes -->
+
+        <section id="icones">
+            <div class="iconeBox">
+                <div class="iconeImg">
+                    <img src="public/img/enfantparent.png">
+                </div>
+                <div class="iconeTitle">
+                    <h4>Conçu par et pour les enfants</h4>
+                </div>
+                <div class="iconeParagraph">
+                    <p>Le potager est adapté à la morphologie des enfants et leur permet d’acquérir les gestes de jardinage dès 2 ans. </p>
+                </div>
+            </div>
+            <div class="iconeBox">
+                <div class="iconeImg">
+                    <img src="public/img/adaptable.png">
+                </div>
+                <div class="iconeTitle">
+                    <h4>Adapté aux petits espaces</h4>
+                </div>
+                <div class="iconeParagraph">
+                    <p>Transportable, le potager  s’adapte  à tous vos espaces, meubles, cours. </p>
+                </div>
+            </div>
+            <div class="iconeBox">
+                <div class="iconeImg">
+                    <img src="public/img/personnalisable.png">
+                </div>
+                <div class="iconeTitle">
+                    <h4>Personnalisable</h4>
+                </div>
+                <div class="iconeParagraph">
+                    <p>Scratcher - déscratcher à l’infini vos motifs selon l’envie des enfants et créer un potager qui vous ressemble
+                avec des tissus de récupération. </p>
+            </div>
+            </div>
+            <div class="iconeBox">
+                <div class="iconeImg">
+                    <img src="public/img/transportable.png">
+                </div>                
+                <div class="iconeTitle">
+                    <h4>Ultra-résistant</h4>
+            </div>
+            <div class="iconeParagraph">
+                <p>Les sacs ont une durée de vie de minimum 6 ans et sont composés de matières tissés très solide.</p>
+            </div>
+            </div>
+        </section>
+      
+        <!-- Section Nos Formules -->
+ 
+        <h2>Nos Formules</h2>
+        <section id="formules">
+                <div id="offres">
+                    <div id="découverte">
+                        <h3>DECOUVERTE</h3>
+                        <p>Le potager, tout simplement</p>
+                        <p class="price">12€ HT/enfant (1h)</p>
+                        <button class="lirePlus">
+                            <p id="plus">+</p>
+                            <p>LIRE PLUS</p>
+                        </button>
+                    </div>
+                    <div id="essentielle">
+                        <h3>ESSENTIELLE</h3>
+                        <p>Le potager, un atout essentiel</p>
+                        <p class="price">15€ HT/enfant (1h30)</p>
+                        <button class="lirePlus">
+                            <p id="plus">+</p>
+                            <p>LIRE PLUS</p>
+                        </button>
+                    </div>
+                    <div id="incontournable">
+                        <h3>EXPLORATION</h3>
+                        <p>Un moment incontournable</p>
+                        <p class="price">25€ HT/enfant (2h30)</p>
+                        <button class="lirePlus">
+                            <p id="plus">+</p>
+                            <p>LIRE PLUS</p>
+                        </button>
+                    </div>
+                </div>
+        </section
+
+  </main>
+  
+    <!-- Footer -->
+    <footer id="footerContainer">
+        <div id="newsletter">
+            <p>Notre newsletter, pour suivre tous nos ateliers !</p>
+            <form id="newsletterForm" action="#">
+                <div id="input">
+                    <input type="text" placeholder="Votre email">
+                    <button>S'inscrire</button>
+                </div>
+                <div id="checkbox">
+                    <input type="checkbox" name="#" id="conditions">
+                    <label for="conditions">Notre newsletter, pour suivre tous nos ateliers !</label>
+                </div>
+            </form>
+        </div>
+
+        <div id="infosFooter">
+            <p>Akuapéli</p>
+
+            <ul id="arbo">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Piliers</a></li>
+                <li><a href="#">Le Potager</a></li>
+                <li><a href="#">Nos Offres</a></li>
+                <li><a href="#">Aller plus loin</a></li>
+            </ul>
+
+            <ul id="etc">
+                <li><a href="#">Qui sommes-nous ?</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Mentions Légales</a></li>
+            </ul>
+
+            <div id="socialNetworks">
+                <a href="#"><img src="./ressources/images/FB.png" alt="Logo Facebook"></a>
+                <a href="#"><img src="./ressources/images/Insta.png" alt="Logo Instagram"></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
