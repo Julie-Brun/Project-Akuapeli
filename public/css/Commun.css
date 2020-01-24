@@ -81,12 +81,12 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;;
+    justify-content: center;
 }
 
 .questionBox p{
     font-family: 'Indie Flower', cursive;
-    font-size: 1.5em;
+    font-size: 1.75em; /*Changement*/
     margin: 5px;
 }
 
@@ -119,6 +119,7 @@ h2{
     background-color: #674F98;
     color: #ffffff;
     padding: 1vw 3vw;
+    border: none; /*Changement*/
 }
 
 /* Footer */
@@ -136,10 +137,6 @@ footer {
 
 /* Newsletter du Footer */
 
-/* footer{
-    display: none;
-} */
-
 footer #newsletter {
     width: 51vw;
     height: 28vh;
@@ -150,7 +147,7 @@ footer #newsletter {
     justify-content: center;
     align-items: center;
     background: #FACFCE;
-    font-size: 1.25em;
+    font-size: 1.5em; /*Changement*/
     color: #3E2278;
 }
 
@@ -202,7 +199,7 @@ footer #infosFooter p {
 
 footer #infosFooter ul li {
     font-family: 'Barlow', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.125em; /*Changement*/
     list-style: none;
 }
 
