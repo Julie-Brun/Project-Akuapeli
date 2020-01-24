@@ -136,9 +136,10 @@ footer {
 
 /* Newsletter du Footer */
 
-/* footer{
-    display: none;
-} */
+
+#footerContainer{
+    height: 80vh;
+}
 
 footer #newsletter {
     width: 51vw;
