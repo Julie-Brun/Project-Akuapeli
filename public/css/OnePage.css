@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    margin: 5vw 0 0 0;
+    margin: 8vh 0 0 0;
 }
 
 #blocCouleur{
@@ -60,7 +60,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.25em; /*Changement*/
 }
 
 #containerTexte #lieux{
@@ -70,7 +70,7 @@
 #containerTexte #sentence{
     font-weight: 600;
 }
-  
+
   /* Section Piliers */
 
 #piliersSection{
@@ -79,8 +79,13 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
+    margin-top: 10vh; /*Changement*/
 }
-  
+
+#piliersSection h2{
+    margin-bottom: 7vh;
+}
+
 #piliersContainer{
     width: 100%;
     display: flex;  
@@ -103,7 +108,7 @@
 #bienManger{
     position: absolute; 
     left: 18vw;
-    top: 3vh;
+    top: 2vh; /*Changement*/
 }
 
 #bienEtre{
@@ -142,36 +147,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5vw;
+    margin-top: 5vh;
 }
 
 #explication-bienEtre, #explication-biodiversité, #explication-bienManger{
-    width: 20vw;
-    height: 30vh;
+    width: 200px; /*Changement*/
+    height: 200px; /*Changement*/
     display: flex; 
     flex-direction: column;
     align-items: center;
+    justify-content: center; /*Changement*/
     background-color: #FACFCE;
     font-size: 1.06em;
-    text-align: center;
-    padding: 1vw; 
+    padding: 3vw; /*Changement*/
 }
 
 #leftDiv #explication-biodiversité{
     position: absolute; 
-    top: 52vh; 
-    left: 30vw;
+    top: 49vh; /*Changement*/
+    left: 32vw; /*Changement*/
 }
 
 #piliersContainer h3{
     background-color: #674F98;
     color: #ffffff;
-    padding: 0.5vw 1vw 0.5vw 1vw;
+    padding: 0.5vh 1vw 0.5vh 1vw;
     font-size: 1.37em ;
     font-weight: 600;
     text-transform: uppercase;
 }
- 
+
 /* Section Potagers */
 
 #potagers{
@@ -179,14 +184,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  
+    margin-top: 8vh; /*Changement*/
+}
+
 #potagersContent{
     width: 80%;
     display: flex;
     flex-direction: column; 
     position: relative;
+    margin-top: 4vh; /*Changement*/
 }
 
 .potagersBox{
@@ -220,13 +226,14 @@
 }
 
 #commentBox{
-    margin-left: 12vw;
+    margin-left: 11vw; /*Changement*/
+    margin-top: 8vh; /*Changement*/
 }
 
 #potagersArrow{
     position: absolute;
-    margin-left: 48vw;
-    margin-top: -20vh;
+    left: 48vw;
+    top: 60vh; /*Changement*/
 }
 
 /* Section Potagers - Comment ça marche? */
@@ -241,7 +248,7 @@
     width: 100%;
     height: 30vh;
     position: absolute;
-    top: 34vh;   
+    top: 33.5vh;   
 }
 
 #commentçamarche{
@@ -267,21 +274,22 @@
     text-transform: uppercase;
     background-color: #DD897A;
     color: #ffffff;
-    padding: 0.5vw 1vw 0.5vw 1vw;
+    padding: 0.5vh 1vw 0.5vh 1vw; 
     position: absolute;
-    right: 15vw;
+    right: 16vw; /*Changement*/
 }
 
 #commentçamarche .commentStep .commentImg{
     border-radius: 50%;
-    width: 18vw;
-    height: 40vh;
+    width: 280px; /*Changement*/
+    height: 280px; /*Changement*/
+    object-fit: cover; /*Changement*/
 }
 
 #commentçamarche .commentStep p{
     margin-top: 4vh;
     text-align: center;
-    padding: 0.5vw 3vw;
+    padding: 0.5vh 3vw;
 }
 
 #step1{
@@ -302,7 +310,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 90vh;
+    height: 70vh; /*Changement*/
     width: 80%; 
     margin-left: 10vw;
 }
@@ -324,7 +332,7 @@
 }
 
 .iconeImg img{
-    width: 80%;
+    width: 90%; /*Changement*/
 }
 
 .iconeTitle{
@@ -335,6 +343,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 1.125em; /*Changement*/
 }
 
 .iconeParagraph{
@@ -345,7 +354,7 @@
     align-items: center;
     padding: 2%;
 }
-  
+
   /* Section Nos formules */
 
 #formules{
@@ -371,7 +380,7 @@
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    padding: 7vw 2vw 2vw 2vw;
+    padding: 11vh 2vw 2vh 2vw; /*Changement*/
     margin-top: 3vw;
     font-size: 1.125em;
 }
@@ -385,7 +394,6 @@
 #essentielle{
     background-color: #DD897A;
     margin-right: 6vw;
-    padding: 7vw 2vw 2vw 2vw;
 }
 
 #incontournable{
@@ -401,7 +409,7 @@ h3{
 .price{
     font-size: 1.300em;
     font-weight: 600;  
-    margin-top: 2vw; 
+    margin-top: 2vh; 
 }
 
 @media screen and (max-width: 800px){}
@@ -414,7 +422,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1vw;
+    margin-top: 4vw; /*Changement*/
     
 }
 
@@ -425,12 +433,11 @@ h3{
 }
 
 #sectionSupplement{
-    /* border: 2px solid tomato; */
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
-    margin-top: 4vw;
+    margin-top: 6vh;
     position: relative;
 }
 
@@ -451,26 +458,28 @@ h3{
 }
 
 #imageMallette, #imageEvenement{
-    margin-top: 3vw;
+    margin-top: 3vh;
 }
 
 #imageMallette img{
     border-radius: 50%;
+    object-fit: cover; /*Changement*/
 }
 
 #imageEvenement img{
     border-radius: 50%;
+    object-fit: cover; /*Changement*/
 }
 
 #imageMallette button {
     position: absolute;
-    bottom: 16vh;
-    left: 20vw;
+    bottom: 18vh; /*Changement*/
+    left: 30vw; /*Changement*/
 }
 
 #imageEvenement button {
     position: absolute;
-    bottom: 16vh;
+    bottom: 18vh; /*Changement*/
     left: 65vw;
 }
 
