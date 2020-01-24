@@ -137,6 +137,11 @@ footer {
 
 /* Newsletter du Footer */
 
+
+#footerContainer{
+    height: 80vh;
+}
+
 footer #newsletter {
     width: 51vw;
     height: 28vh;
