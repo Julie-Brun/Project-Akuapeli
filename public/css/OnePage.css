@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    margin: 8vh 0 0 0;
+    margin: 12vh 0 0 0;
 }
 
 #blocCouleur{
@@ -25,11 +25,20 @@
     top: -3.5vh;
 }
 
-#containerPrincipal img{
-    z-index: 1;
+#blocPhotoAccueil{
     position: absolute;
+    width: 45vw;
+    height: 57vh;
     left: 47vw;
-    top: 5vh;
+    top: 3vh;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#blocPhotoAccueil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #boxInfo{
@@ -70,6 +79,89 @@
 #containerTexte #sentence{
     font-weight: 600;
 }
+
+/* Responsive Partie Accueil */
+
+@media screen and (max-width: 1366px){
+
+    #containerPrincipal{
+        margin: 12vh 0 0 0;
+    }
+
+    #blocPhotoAccueil{
+        top: 3.5vh;
+    }
+
+    #boxInfo #boutonViolet{
+        position: absolute;
+        top: 25vh;
+    }
+}
+
+@media screen and (max-width: 1280px){
+
+    #boxInfo h2{
+        font-size: 2.7em;
+    }
+
+    #blocPhotoAccueil{
+        top: 3vh;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    #containerPrincipal{
+        min-height: 35vh;
+        margin: 20vh 0 0 0;
+    }
+
+    #blocCouleur{
+        background-color: #DD897A;
+        width: 100%;
+        height: 30vh;
+    }
+
+    #boxInfo{
+        width: 42vw;
+        height: 18vh;
+        right: 30vw;
+        top: 14vh;
+    }
+
+    #boxInfo h2{
+        margin-left: 4vw;
+    }
+
+    #blocPhotoAccueil{
+        width: 65vw;
+        height: 35vh;
+        left: 17vw;
+        top: -12vh;
+    }
+
+    #boxInfo #boutonViolet{
+        position: absolute;
+        top: 12vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #boxInfo h2{
+        font-size: 2em;
+    }
+
+    #containerTexte{
+        font-size: 1em; 
+    }
+}
+
+@media screen and (max-width: 320px){
+
+}
+
+
+
 
   /* Section Piliers */
 
