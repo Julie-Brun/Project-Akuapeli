@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Schoolbell&display=swap" rel="stylesheet">
     <title>Akuapéli</title>
 </head>
+
 <body>
   
    <!-- Header -->
@@ -38,25 +39,56 @@
     <main>
         <section id="offresSection">
             <div id="offresBox">
-                <div id="offresText">
-                    <h3>Découverte</h3>
-                    <p class="offresP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, doloremque.</p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit am  amet consectetur adipisicing elit. Facilis sequi nisi ipsa ullam doloremque.</li>       
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit possimus enim similique.</li>       
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>       
-                    </ul>
-                    <p class="offresP">12€HT/enfant (1h00)</p>
-                    <div id="offresNumberBox">
-                        <button><img src="public/img/lefetarrow.png" id="leftArrow" class="offresArrow"></button>
-                        <img src="public/img/1sur3.png" id="offresNumberPix">
-                        <button><img src="public/img/rightarrow.png" id="rightArrow" class="offresArrow"></button>
+                <div id="slidesText">
+                    <div id="offreDecouverte">   
+                        <div class="offresText slideText showing">
+                            <h3>Découverte</h3>
+                            <p class="offresP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, doloremque.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit am  amet consectetur adipisicing elit. Facilis sequi nisi ipsa ullam doloremque.</li>       
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit possimus enim similique.</li>       
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>       
+                            </ul>
+                            <p class="offresP">12€HT/enfant (1h00)</p>
+                        </div>
+                    </div>
+                    <div id="offreEssentielle">   
+                        <div class="offresText slideText">
+                            <h3>Essentielle</h3>
+                            <p class="offresP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, doloremque.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit am  amet consectetur adipisicing elit. Facilis sequi nisi ipsa ullam doloremque.</li>       
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit possimus enim similique.</li>       
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>       
+                            </ul>
+                            <p class="offresP">12€HT/enfant (1h00)</p>
+                        </div>
+                    </div>
+                    <div id="offreExplore">
+                        <div class="offresText slideText">
+                            <h3>Explore</h3>
+                            <p class="offresP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, doloremque.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor sit am  amet consectetur adipisicing elit. Facilis sequi nisi ipsa ullam doloremque.</li>       
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit possimus enim similique.</li>       
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>       
+                            </ul>
+                            <p class="offresP">12€HT/enfant (1h00)</p>
+                        </div>
                     </div>
                 </div>
-                <div id="offresPix">
-                    <img src="public/img/enfants&potagers.png">
+                <div id="slidesImg">
+                    <div id="sliderImgWrapper">
+                        <div class="sliderImgBox"><img class="slideImg" id="active" src="public/img/enfants&potagers.png"></div><div class="sliderImgBox"><img class="slideImg" src="public/img/Enfants.png"></div><div class="sliderImgBox"><img class="slideImg" src="public/img/Accueil.png"></div>
+                    </div>
                 </div>
             </div>
+            <div id="control">
+                <button><img src="public/img/lefetarrow.png" id="previous" class="controlArrow"></button>
+                <img src="public/img/1sur3.png" id="controlNumber">
+                <button><img src="public/img/rightarrow.png" id="next" class="controlArrow"></button>
+            </div>
+
             <p id="offresPlus">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eligendi sed earum laudantium consectetur, nemo libero accusantium voluptas modi placeat repellendus fugit atque laborum. Debitis deserunt corporis voluptate earum?</p>
         </section>
     </main>
@@ -103,5 +135,6 @@
         </div>
     </footer>
 
+    <script src="public/js/Offres.js"></script>
 </body>
 </html>

@@ -281,8 +281,8 @@
 
 #commentçamarche .commentStep .commentImg{
     border-radius: 50%;
-    width: 280px; /*Changement*/
-    height: 280px; /*Changement*/
+    width: 20vw; /*Changement*/
+    height: 20vw; /*Changement*/
     object-fit: cover; /*Changement*/
 }
 
