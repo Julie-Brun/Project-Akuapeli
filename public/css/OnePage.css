@@ -156,11 +156,35 @@
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 414px){
+    #boxInfo h2{
+        font-size: 1.125em;
+    }
 
+    #boxInfo #boutonViolet{
+        font-size: 0.875em;
+        padding: 2vw;
+    }
+
+    #containerTexte{
+        font-size: 1em; /*Changement*/
+    }
 }
 
+@media screen and (max-width: 320px){
+    #boxInfo h2{
+        font-size: 0.875em;
+    }
 
+    #boxInfo #boutonViolet{
+        font-size: 0.6em;
+        padding: 2vw;
+    }
+
+    #containerTexte{
+        font-size: 0.875em; /*Changement*/
+    }
+}
 
 
   /* Section Piliers */
