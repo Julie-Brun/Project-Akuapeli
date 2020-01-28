@@ -186,7 +186,6 @@
     }
 }
 
-
   /* Section Piliers */
 
 #piliersSection{
@@ -319,14 +318,6 @@
     font-weight: 600;
     text-transform: uppercase;
 }
-/* 
-#bienManger:hover + #bienMangerLight{
-    display: flex;
-}
-
-#bienManger:hover {
-    display: none;
-} */
 
 /* Responsive Partie Piliers */
 
@@ -351,32 +342,26 @@
     }
 
     #bienManger{
-        width: 55%;
         top: -3vh;
     }
 
     #bienEtre{
-        width: 75%;
         bottom: -10vh;  
     }
 
     #bio{
-        width: 62%;
         top: 23vh; 
     }
 
     #bienMangerLight{
-        width: 55%;
         top: -3vh;
     }
 
     #bienEtreLight{
-        width: 55%;
         bottom: -10vh; 
     }
 
     #bioLight{
-        width: 55%;
         top: 23vh; 
     }
 }
@@ -475,8 +460,6 @@
     }
     
 }
-
-
 
 /* Section Potagers */
 
