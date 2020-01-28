@@ -195,16 +195,26 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh; /*Changement*/
+    margin: 10vh 0 20vh 3vw; /*Changement*/
 }
 
 #piliersSection h2{
-    margin-bottom: 7vh;
+    margin-bottom: 4vh;
+}
+
+#piliersTexte{
+    width: 70%;
+    margin-bottom: 5vh;
+    font-size: 1.125em;
 }
 
 #piliersContainer{
     width: 100%;
     display: flex;  
+}
+
+#piliersContainerResponsive{
+    display: none;
 }
 
 #leftDiv{
@@ -221,41 +231,46 @@
     position: relative;
 }
 
+
 #bienManger{
     position: absolute; 
     left: 18vw;
-    top: 2vh; /*Changement*/
+    top: -3vh; /*Changement*/
 }
 
 #bienEtre{
+    display: none;
     position: absolute; 
     bottom: -11vh; 
+    left: -1vw;
 }
 
 #bio{
+    display: none;
     position: absolute; 
     left: 18vw;
-    top: 25vh; 
+    top: 22vh; 
 }
 
 #bienMangerLight{
     display: none;
     position: absolute; 
     left: 18vw;
-    top: 3vh;
+    top: -3vh;
 }
 
 #bienEtreLight{
-    display: none;
+    display: flex;
     position: absolute; 
     bottom: -11vh; 
+    left: -1vw;
 }
 
 #bioLight{
-    display: none;
+    display: flex;
     position: absolute; 
     left: 18vw;
-    top: 25vh; 
+    top: 22vh; 
 }
 
 #rightDiv{
@@ -263,7 +278,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5vh;
+    margin-top: 1vh;
 }
 
 #explication-bienEtre, #explication-biodiversité, #explication-bienManger{
@@ -274,8 +289,20 @@
     align-items: center;
     justify-content: center; /*Changement*/
     background-color: #FACFCE;
-    font-size: 1.06em;
+    font-size: 1em;
     padding: 3vw; /*Changement*/
+}
+
+#explication-bienEtre{
+    opacity: 0; 
+}
+
+#explication-biodiversité{
+    opacity: 0; 
+}
+
+#explication-bienManger{
+    opacity: 1; 
 }
 
 #leftDiv #explication-biodiversité{
@@ -292,6 +319,164 @@
     font-weight: 600;
     text-transform: uppercase;
 }
+/* 
+#bienManger:hover + #bienMangerLight{
+    display: flex;
+}
+
+#bienManger:hover {
+    display: none;
+} */
+
+/* Responsive Partie Piliers */
+
+@media screen and (max-width: 1366px){
+    #piliersSection{
+        margin-bottom: 20vh;
+        margin-left: 5vw;
+    }
+
+    #bienEtre{
+        bottom: -13vh; 
+    }
+
+    #bienEtreLight{
+        bottom: -13vh; 
+    }
+}
+
+@media screen and (max-width: 1280px){
+    #piliersSection{
+        margin-bottom: 22vh;
+    }
+
+    #bienManger{
+        width: 55%;
+        top: -3vh;
+    }
+
+    #bienEtre{
+        width: 75%;
+        bottom: -10vh;  
+    }
+
+    #bio{
+        width: 62%;
+        top: 23vh; 
+    }
+
+    #bienMangerLight{
+        width: 55%;
+        top: -3vh;
+    }
+
+    #bienEtreLight{
+        width: 55%;
+        bottom: -10vh; 
+    }
+
+    #bioLight{
+        width: 55%;
+        top: 23vh; 
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #piliersSection{
+        margin: 7vh 0 3vh 0; /*Changement*/
+    }
+
+    #piliersTexte{
+        width: 100%;
+        background-color: hsl(0, 80%, 98%);
+    }
+
+    #piliersTexte p{
+        margin: 5vw;
+    }
+
+    #piliersContainer{
+        display: none;
+    }
+
+    #piliersContainerResponsive{
+        display:flex;
+        flex-direction: column;
+    }
+
+    #bienEtreResponsive, #bienMangerResponsive, #biodiversiteResponsive{
+        display: flex;
+        width: 100%;
+        margin-bottom: 10vw;
+    }
+
+    .explicationPiliers{
+        width: 50%;
+        background-color: #FACFCE;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vw;
+    }
+
+    .explicationPiliers h3{
+        background-color: #DD897A;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 1vw;
+    }
+
+    .leafContainer{
+        width: 50%;
+        display:flex;
+        justify-content: center;
+    }
+
+    #image-bienEtreLightResponsive, #image-bienMangerLightResponsive, #image-bioLightResponsive{
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 768px){
+    #piliersSection{
+        margin: 7vh 0 25vh 0; /*Changement*/
+    }
+
+    #piliersTexte p{
+        font-size: 1.06em;
+    }
+}
+
+@media screen and (max-width: 414px){
+    #piliersSection{
+        margin: 7vh 0 70vh 0; /*Changement*/
+    }  
+
+    #piliersTexte p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #piliersSection{
+        margin: 7vh 0 110vh 0; /*Changement*/
+    } 
+
+    #piliersTexte p{
+        font-size: 0.875em;
+    }
+
+    .explicationPiliers h3{
+        font-size: 1.5em;
+    }
+
+    .explicationPiliers p {
+        font-size: 0.875em;
+    }
+    
+}
+
+
 
 /* Section Potagers */
 
