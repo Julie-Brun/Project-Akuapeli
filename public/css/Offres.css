@@ -30,6 +30,7 @@
 .offresP{
     font-weight: 600;
     margin-left: 4%;
+    font-size: 1.250vw;
 }
 
 button{
@@ -42,15 +43,15 @@ button{
     margin: 3% 0;
 }
 
-#offreDecouverte .offresText{
+#offreClassique .offresText{
     background: #FACFCE;
 }
 
-#offreEssentielle .offresText{
+#offreDecouverte .offresText{
     background: #DD897A;
 }
 
-#offreExplore .offresText{
+#offreEssentielle .offresText{
     background: #AC9FC6;
 
 }
@@ -134,28 +135,36 @@ button{
 
 /* Offres Responsive  */
 
-/* @media screen and (max-width: 1280px){
+@media screen and (max-width: 1280px){
     #offresBox{
-        height : 70vh;
+        height : 63vh;
     }
 
     #slidesText {
-        height: 70vh;
+        height: 63vh;
     }
 
     .slideText {
-        height: 70vh;
+        height: 63vh;
+    }
+
+    .offresText h3{
+        font-size: 3.5vw;
+        margin: 2% 0 0 4%;
     }
 
     #slidesImg {
-        height: 70vh; 
+        height: 63vh; 
+    }
+
+    .sliderImgBox{
+        height: 63vh; 
     }
 
     #control{
-        left: 25vw;
-        top: 60vh;
+        top: 53vh;
     }
-} */
+}
 
 
 /* @media screen and (max-width: 1024px){
@@ -181,7 +190,76 @@ button{
     } 
  }  */
 
- /* @media screen and (max-width: 768px){} */
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    #offresBox{
+        height : 28vh;
+    }
+
+    #slidesText {
+        height: 28vh;
+    }
+
+    .slideText {
+        height: 28vh;
+    }
+
+    .offresText h3{
+        font-size: 3.5vw;
+        margin: 2% 0 0 4%;
+    }
+
+    #slidesImg {
+        height: 28vh; 
+    }
+
+    .sliderImgBox{
+        height: 28vh; 
+    }
+
+    #control{
+        top: 24vh;
+    } 
+
+    #offresPlus{
+        margin-top: 3vh;
+    
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    #offresBox{
+        height : 45vh;
+    }
+
+    #slidesText {
+        height: 45vh;
+    }
+
+    .slideText {
+        height: 45vh;
+    }
+
+    .offresText h3{
+        font-size: 3.5vw;
+        margin: 2% 0 0 4%;
+    }
+
+    #slidesImg {
+        height: 45vh; 
+    }
+
+    .sliderImgBox{
+        height: 45vh; 
+    }
+
+    #control{
+        top: 37vh;
+    } 
+
+    #offresPlus{
+        margin-top: 5vh;
+    }
+}
 
 @media screen and (max-width: 425px){
     #offresBox{
