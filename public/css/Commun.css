@@ -55,7 +55,7 @@ header #logo {
 header #logo h1 {
     margin: 0;
     font-family: 'Schoolbell', cursive;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #DD897A;
 }
 
@@ -189,7 +189,7 @@ h2{
 
 footer {
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

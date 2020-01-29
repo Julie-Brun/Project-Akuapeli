@@ -1102,6 +1102,7 @@ h3{
     font-size: 1.700em; 
     font-weight: 600;
     margin: 0; 
+    text-transform: uppercase;
 }
 
 .price{
