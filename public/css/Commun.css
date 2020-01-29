@@ -59,6 +59,68 @@ header #logo h1 {
     color: #DD897A;
 }
 
+/* Responsive Hearder */
+
+@media screen and (max-width: 1366px){
+    header #logo{
+        margin-top: 1vh;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    header #logo h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    header {
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header {
+        font-size: 0.875em;
+    }
+}
+
+@media screen and (max-width: 414px){
+    
+    .headerSection a{
+        display: none;
+    }
+
+    header #menu {
+        display: flex;
+        width: 10%;
+    }
+
+    header #logo {
+        width: 40%;
+        height: 14vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header #logo h1 {
+        margin: 0;
+        font-family: 'Schoolbell', cursive;
+        font-size: 2.5em;
+        color: #DD897A;
+    }
+
+    #imageLogo{
+    width: 15%;
+    object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 320px){}
+
+
 /* Section principale */
 
 main{
