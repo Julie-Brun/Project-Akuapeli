@@ -468,7 +468,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8vh; /*Changement*/
+    margin-top: 8vh; 
 }
 
 #potagersContent{
@@ -476,7 +476,7 @@
     display: flex;
     flex-direction: column; 
     position: relative;
-    margin-top: 4vh; /*Changement*/
+    margin-top: 4vh;
 }
 
 .potagersBox{
@@ -510,21 +510,217 @@
 }
 
 #commentBox{
-    margin-left: 11vw; /*Changement*/
-    margin-top: 8vh; /*Changement*/
+    margin-left: 11vw; 
+    margin-top: 8vh; 
 }
 
 #potagersArrow{
     position: absolute;
     left: 48vw;
-    top: 60vh; /*Changement*/
+    top: 60vh;
+}
+
+#potagersArrowRes{
+    display: none;
+    position: absolute;
+    left: 48vw;
+    top: 60vh;
+}
+
+/* Responsive section Potagers */
+
+@media screen and (max-width: 1366px){
+    #potagersText{
+        margin-left: 37vw;
+    }
+
+    #potagersArrow{
+        top: 65vh; 
+    }
+}
+
+@media screen and (max-width: 1280px){
+    #potagersArrow{
+        top: 68vh;
+    }
+
+    #commentBox{
+        margin-left: 13vw; 
+        margin-top: 11vh;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #potagers h2{
+        font-size: 4em;
+    }
+
+    .potagersBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #potagersBoxSize{
+        height: auto;
+    }
+
+    #enfantsaupotager{
+        margin-left: 0vw; 
+        width: 50vw;
+        height: 50vw;
+        object-fit: cover;
+    }
+
+    #potagersText{
+        width: 48vw;
+        margin-left: 12vw;
+        margin-top: 29vw;
+    }
+
+    #potagersText p{
+        font-size: 1.3em;
+    }
+
+    #potagersArrow{
+        top: 52vh; 
+    }
+
+    #commentBox{
+        height: 8vh;
+        width: 45%; 
+        margin-left: -26vw; 
+        margin-top: 30vh;
+    }
+
+    #commentBox p{ 
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    #enfantsaupotager{
+        width: 60vw;
+        height: 60vw;
+    }
+
+    #potagersText{
+        width: 55vw;
+        margin-left: 15vw;
+        margin-top: 38vw;
+    }
+
+    #potagersText p{
+        font-size: 1.7em;
+    }
+
+    #commentBox{
+        margin-top: 36vh;
+    }
+
+    #commentBox p {
+        font-size: 2.5em;
+    }
+
+    #gribouillis{
+        width: 20vw;
+    }
+
+    #potagersArrow{
+        width: 20vw;
+        height: 20vw;
+        top: 68vh; 
+    }
+}
+
+@media screen and (max-width: 414px){
+    #potagers h2{
+        font-size: 6em;
+    }
+
+    #potagers{
+        width: 100%;
+    }
+
+    #potagersText p{
+        font-size: 3.5em;
+    }
+
+    #potagersText{
+        margin-left: 0vw;
+        margin-top: 90vw;
+        width: 100vw;
+        padding: 5vw;
+    }
+
+    #potagersArrow{
+        display: none;
+    }
+
+    #commentBox{
+        padding: 5vw;
+        margin-left: 6vw;
+        margin-top: 60vh;
+        width: 70%;
+    }
+
+    #commentBox p {
+        font-size: 5em;
+        margin: 0;
+    }
+
+    #gribouillis{
+        width: 40vw;
+    }
+
+    #enfantsaupotager{
+        width: 80vw;
+        height: 80vw;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #potagers h2{
+        font-size: 6.5em;
+    }
+
+    #potagersText p{
+        font-size: 4em;
+    }
+
+    #potagersText{
+        margin-left: 0vw;
+        margin-top: 110vw;
+        width: 100vw;
+        padding: 5vw;
+    }
+
+    #enfantsaupotager{
+        width: 90vw;
+        height: 90vw;
+    }
+
+    #commentBox{
+        margin-top: 75vh;
+        width: 80%;
+    }
+
+    #commentBox p {
+        font-size: 6em;
+        margin: 0;
+    }
+
+    #gribouillis{
+        width: 50vw;
+    }
 }
 
 /* Section Potagers - Comment ça marche? */
 
 #comment{
     position: relative;
-    width: 100%;
+    width: 100%; 
 }
 
 #pinkBlock{
@@ -532,7 +728,7 @@
     width: 100%;
     height: 30vh;
     position: absolute;
-    top: 33.5vh;   
+    top: 33.5vh;  
 }
 
 #commentçamarche{
@@ -560,14 +756,14 @@
     color: #ffffff;
     padding: 0.5vh 1vw 0.5vh 1vw; 
     position: absolute;
-    right: 16vw; /*Changement*/
+    right: 16vw;
 }
 
 #commentçamarche .commentStep .commentImg{
     border-radius: 50%;
-    width: 280px; /*Changement*/
-    height: 280px; /*Changement*/
-    object-fit: cover; /*Changement*/
+    width: 19.4vw; 
+    height: 19.4vw; 
+    object-fit: cover; 
 }
 
 #commentçamarche .commentStep p{
@@ -586,6 +782,224 @@
 
 #step3{
     align-self: flex-start;
+}
+
+/* Section Potagers - Comment ça marche? Responsive */
+
+@media screen and (max-width: 1024px){
+    #commentçamarche{
+        height: 60vh;
+        margin-left: 8vw;
+    }
+
+    #commentçamarche .commentStep{
+        height: 40vh;
+        margin-left: 3vw;
+    }
+
+    #pinkBlock{
+        height: 20vh;
+        position: absolute;
+        top: 20vh;   
+    }
+
+    #commentçamarche .commentStep .commentImg{
+        width: 25vw; 
+        height: 25vw; 
+    }
+
+    #commentçamarche .commentStep h3{
+        font-size: 1.5em;
+        padding: 1vw;
+        right: 18vw;    
+    }
+
+
+    #commentçamarche #step1 h3{
+        top: 17vh; 
+    }
+
+    #commentçamarche #step2 h3{
+        top: 17vh; 
+    }
+
+    #commentçamarche #step3 h3{
+        top: 18vh; 
+    }
+
+    #commentçamarche .commentStep p{
+        margin-top: 1.5vh;
+        font-size: 1.3em;
+        padding: 0.5vh 1vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #commentçamarche{
+        height: 60vh;
+        margin-left: 5vw;
+    }
+
+    #commentçamarche .commentStep .commentImg{
+        width: 27vw; 
+        height: 27vw; 
+    }
+
+    #pinkBlock{
+        height: 22vh;
+        top: 19vh;   
+    }
+
+    #commentçamarche .commentStep h3{
+        font-size: 1.7em;   
+    }
+
+    #commentçamarche #step1 h3{
+        top: 20vh; 
+        right: 15vw;
+    }
+
+    #commentçamarche #step2 h3{
+        top: 20vh; 
+        right: 19vw;
+    }
+
+    #commentçamarche #step3 h3{
+        top: 20vh; 
+        right: 19vw;
+    }
+
+    #commentçamarche .commentStep p{
+        font-size: 1.5em;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 414px){
+    #comment{
+        margin-top: 10vh;
+        height: 200vh; 
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #commentçamarche{
+        display: flex;
+        width: 100%;
+        height: 200vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 0vw;
+    }
+
+    #commentçamarche .commentStep{
+        height: 100vh;
+        width: 60%;
+    }
+
+    #commentçamarche .commentStep .commentImg{
+        width: 70vw; 
+        height: 70vw; 
+    }
+
+    #step1{
+        align-self: center;
+    }
+    
+    #step2{
+        align-self: center;
+    }
+    
+    #step3{
+        align-self: center;
+    }
+
+    #pinkBlock{
+        top:0vh;
+        height: 200vh;
+        width: 60%;  
+    }
+
+    #commentçamarche .commentStep h3{
+        font-size: 5em;   
+    }
+
+    #commentçamarche #step1 h3{
+        top: 35vh; 
+        right: 24vw;
+        padding: 2vw;
+    }
+
+    #commentçamarche #step2 h3{
+        top: 35vh; 
+        right: -10vw;
+        padding: 2vw 6vw 2vw 6vw;
+    }
+
+    #commentçamarche #step3 h3{
+        top: 40vh; 
+        right: 32vw;
+        padding: 2vw 6vw 2vw 6vw;
+    }
+
+    #commentçamarche .commentStep p{
+        font-size: 4em;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #comment{
+        height: 280vh; 
+    }
+
+    #pinkBlock{
+        top: 0vh;
+        height: 270vh;
+        width: 80%;  
+    }
+
+    #commentçamarche{
+        margin-top: 5vh;
+    }
+
+    #commentçamarche .commentStep{
+        margin-bottom: 10vh;
+    }
+
+    #commentçamarche .commentStep .commentImg{
+        width: 90vw; 
+        height: 90vw; 
+    }
+
+    #commentçamarche .commentStep h3{
+        font-size: 7em;   
+    }
+
+    #commentçamarche #step1 h3{
+        top: 40vh; 
+        right: 15vw;
+        padding: 2vw;
+    }
+
+    #commentçamarche #step2 h3{
+        top: 40vh; 
+        right: -20vw;
+        padding: 2vw 6vw 2vw 6vw;
+    }
+
+    #commentçamarche #step3 h3{
+        top: 45vh; 
+        right: 30vw;
+        padding: 2vw 6vw 2vw 6vw;
+    }
+
+    #commentçamarche .commentStep p{
+        font-size: 5em;
+        padding: 0;
+    }
 }
 
 /* Section Potagers - Icônes */
