@@ -1,43 +1,147 @@
 #quiSommesNous{
+    /* border: 2px solid purple; */
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    margin-top: 8vw;
+    position: relative;
+    margin-top: 5vh;
 }
 
 #quoteEtPhotos{
+    /* border: 2px solid tomato; */
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-#quoteEtPhotos h2{
-    font-family: 'Barlow', sans-serif;
-    font-size: 3.75em;
-    font-weight: 600;
-    color: #3E2278; 
+    align-items: center;
 }
 
 #quoteEtPhotos #blocQuote{
+    /* border: 2px solid forestgreen; */
     width: 52%;
-    height: 45vh;
+    /* height: 40vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #DD897A;
-    margin-top: 4.5vw;
+    padding: 1vw;
+}
+
+#quoteEtPhotos #blocQuote p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 2.750vw;
+    font-weight: 600;
+    color: #3E2278;
+    margin: 2vw 1.5vw;
 }
 
 #quoteEtPhotos #photoEntrepreneure{
     position: absolute;
-    right:75vw;
-    bottom: 19vw;
+    width: 18vw;
+    height: 45vh;
+    left: 7vw;
+    top : 1vh;
+}
+
+#quoteEtPhotos #photoEntrepreneure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#quoteEtPhotos #photoVégétation{
+    width: 22vw;
+    height: 55vh;
+}
+
+#quoteEtPhotos #photoVégétation img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#quiSommesNous #paraQuiSommesNous{
+    /* border: 2px solid forestgreen; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    margin: 0 0 0 18vw;
+    position: relative;
 }
 
 #quiSommesNous #paraQuiSommesNous p {
-    font-size: 1.875em;
-    width: 40%;
-    margin-left: 40vw;
+    align-self: flex-end;
+    font-size: 1.7vw;
 }
+
+/* Qui sommes-nous? Responsive */
+
+@media screen and (max-width: 1280px){
+    #quiSommesNous{
+        margin-top: 12vh;
+    }
+
+    #quoteEtPhotos #blocQuote p{
+        font-size: 2.5vw;
+    }
+
+    #quoteEtPhotos #photoVégétation{
+        width: 20vw;
+        height: 65vh;
+    }
+
+    #quoteEtPhotos #photoEntrepreneure{
+        width: 15vw;
+        height: 53vh;
+        left: 9vw;
+        top : -8vh;
+    }
+    
+    #quiSommesNous #paraQuiSommesNous p {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+    #quiSommesNous{
+        height: 45vh;
+        margin-top: 5vh;
+    }
+    
+    
+    #quoteEtPhotos #photoVégétation{
+        width: 20vw;
+        height: 25vh;
+    }
+
+    #quoteEtPhotos #photoEntrepreneure{
+        width: 18vw;
+        height: 23vh;
+        left: 8vw;
+        top : -1vh;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+    #quiSommesNous{
+        height: 80vh;
+        margin-top: 5vh;
+    }  
+    
+    #quoteEtPhotos #photoVégétation{
+        width: 22vw;
+        height: 45vh;
+    }
+
+    #quoteEtPhotos #photoEntrepreneure{
+        width: 18vw;
+        height: 40vh;
+        left: 8vw;
+        top : 1vh;
+    }
+}
+
+
