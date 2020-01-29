@@ -355,7 +355,7 @@
     padding: 2%;
 }
 
-  /* Section Nos formules */
+/* Section Nos formules */
 
 #formules{
     width: 100%;
@@ -374,7 +374,7 @@
     align-items: center;
 }
 
-#découverte, #essentielle, #incontournable{
+#classique, #decouverte, #essentielle{
     width: 18vw;
     height: 40vh; 
     display: flex; 
@@ -385,18 +385,18 @@
     font-size: 1.125em;
 }
 
-#découverte{
+#classique{
     background-color: #FACFCE;
     margin-right: 6vw;
     margin-left: 8vw;
 }
 
-#essentielle{
+#decouverte{
     background-color: #DD897A;
     margin-right: 6vw;
 }
 
-#incontournable{
+#essentielle{
     background-color: #AC9FC6;
 }
 
@@ -413,7 +413,7 @@ h3{
     margin-top: 2vh; 
 }
 
-@media screen and (max-width: 800px){}
+/* @media screen and (max-width: 800px){} */
 
 /* Section Supplément */
 
