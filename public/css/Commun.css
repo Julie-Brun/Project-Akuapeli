@@ -149,7 +149,7 @@ h2{
 
 .questionBox p{
     font-family: 'Indie Flower', cursive;
-    font-size: 1.75em; /*Changement*/
+    font-size: 1.75em; 
     margin: 5px;
 }
 
@@ -163,7 +163,6 @@ h2{
     border-radius: 50%;
     background-color: #ffffff;
     border: 1.5px  #3E2278 solid;
-    /* margin-top: 3vw; */
     color: #3E2278;
 }
 
