@@ -994,7 +994,7 @@
 
 @media screen and (max-width: 320px){
     #comment{
-        height: 280vh; 
+        height: 235vh; 
     }
 
     #pinkBlock{
@@ -1093,6 +1093,95 @@
     justify-content: flex-start;
     align-items: center;
     padding: 2%;
+}
+
+@media screen and (max-width: 1024px){
+    #icones{
+        height: 45vh;
+        margin-left: 0vw;
+    }
+
+    .iconeBox{
+        height: 50vh;
+    }
+
+    .iconeImg img{
+        width: 100%; 
+    }
+
+    .iconeTitle{
+        font-size: 1.5em; 
+    }
+    
+    .iconeParagraph p{
+        font-size: 1.125em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #icones{
+        height: 50vh;
+    }
+
+    .iconeImg img{
+        width: 90%; 
+    }
+
+    .iconeTitle{
+        font-size: 1.8em; 
+    }
+
+    .iconeParagraph p{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 414px){
+    #icones{
+        border: 2px solid violet;
+        height: 80vh;
+        width: 50vw;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #icones>* {
+        flex: 1 1 70px;
+    }
+
+    .iconeBox{
+        border: 2px solid red;
+        height: 30vh;
+    }
+
+    .iconeImg{
+        border: 2px solid green;
+        height: 75vh;
+    }
+
+    .iconeImg img{
+        border: 2px solid blue;
+        width: 80%; 
+    }
+
+    .iconeTitle{
+        border: 2px solid yellow;
+        font-size: 3em;
+    }
+
+    .iconeParagraph p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .iconeImg img{
+        width: 90%; 
+    }
+
+    .iconeTitle{
+        font-size: 4em;
+    }
 }
 
 /* Section Nos formules */
