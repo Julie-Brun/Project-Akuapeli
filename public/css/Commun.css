@@ -223,13 +223,17 @@ h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 82px;
-    height: 82px;
+    width: 6.5vw;
+    height: 6.5vw;
     border-radius: 50%;
     background-color: #ffffff;
     border: 1.5px  #3E2278 solid;
     margin-top: 3vw;
     color: #3E2278;
+}
+
+.lirePlus a{
+    text-decoration: none;
 }
 
 .lirePlus p {

@@ -166,30 +166,6 @@ button{
     }
 }
 
-
-/* @media screen and (max-width: 1024px){
-    #offresBox{
-        height : 70vh;
-    }
-
-    #slidesText {
-        height: 70vh;
-    }
-
-    .slideText {
-        height: 70vh;
-    }
-
-    #slidesImg {
-        height: 70vh; 
-    }
-
-    #control{
-        left: 25vw;
-        top: 60vh;
-    } 
- }  */
-
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     #offresBox{
         height : 28vh;
@@ -288,7 +264,6 @@ button{
     }
 
     #slidesText{
-        /* border: 2px solid blue; */
         width: 100%;
         display: flex;
         flex-direction: column;
