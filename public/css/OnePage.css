@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    margin: 12vh 0 0 0;
+    margin: 24vh 0 0 0;
 }
 
 #blocCouleur{
@@ -25,20 +25,11 @@
     top: -3.5vh;
 }
 
-#blocPhotoAccueil{
-    position: absolute;
-    width: 45vw;
-    height: 57vh;
-    left: 47vw;
-    top: 3vh;
-    object-fit: cover;
+#containerPrincipal img{
     z-index: 1;
-}
-
-#blocPhotoAccueil img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    position: absolute;
+    left: 47vw;
+    top: 5vh;
 }
 
 #boxInfo{
@@ -69,7 +60,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.25em; /*Changement*/
+    font-size: 1.25em; 
 }
 
 #containerTexte #lieux{
@@ -131,6 +122,7 @@
 
     #boxInfo h2{
         margin-left: 4vw;
+        font-size: 3.5em; /*changement*/
     }
 
     #blocPhotoAccueil{
@@ -143,46 +135,75 @@
     #boxInfo #boutonViolet{
         position: absolute;
         top: 12vh;
-    }
-}
-
-@media screen and (max-width: 768px){
-    #boxInfo h2{
-        font-size: 2em;
+        font-size: 2em; /*changement*/
     }
 
     #containerTexte{
-        font-size: 1em; 
+        font-size: 1.7em; /*changement*/
     }
 }
 
 @media screen and (max-width: 414px){
+    #accueil{
+        margin-top: 7vh; /*changement*/
+    }
+    
+    #boxInfo{
+        width: 50vw;
+        height: 20vh;
+        right: 26vw;
+        top: 14vh;
+    }
+
+    #blocPhotoAccueil{
+        width: 70vw; /*changement*/
+        left: 14vw; /*changement*/
+    }
+
     #boxInfo h2{
-        font-size: 1.125em;
+        font-size: 5em; /*changement*/
     }
 
     #boxInfo #boutonViolet{
-        font-size: 0.875em;
+        top: 13vh; /*changement*/
         padding: 2vw;
+        font-size: 3em; /*changement*/
     }
 
     #containerTexte{
-        font-size: 1em; /*Changement*/
+        font-size: 3em; /*changement*/
+        margin-top: 2vw; /*changement*/
+        text-align: center; /*changement*/
+        padding: 1vw; /*changement*/
     }
 }
 
 @media screen and (max-width: 320px){
+    #boxInfo{
+        width: 60vw;
+        height: 25vh;
+        right: 20vw;
+        top: 14vh;
+    }
+
+    #blocPhotoAccueil{
+        width: 75vw; /*changement*/
+        left: 13vw; /*changement*/
+    }
+
     #boxInfo h2{
-        font-size: 0.875em;
+        font-size: 6em; /*changement*/
     }
 
     #boxInfo #boutonViolet{
-        font-size: 0.6em;
+        top: 15vh; /*changement*/
         padding: 2vw;
+        font-size: 4em; /*changement*/
     }
 
     #containerTexte{
-        font-size: 0.875em; /*Changement*/
+        font-size: 3.5em; /*changement*/
+        margin-top: 10vw; /*changement*/
     }
 }
 
@@ -194,7 +215,7 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
-    margin: 10vh 0 20vh 3vw; /*Changement*/
+    margin: 10vh 0 12vh 3vw; /*Changement*/
 }
 
 #piliersSection h2{
@@ -234,7 +255,7 @@
 #bienManger{
     position: absolute; 
     left: 18vw;
-    top: -3vh; /*Changement*/
+    top: -3vh; 
 }
 
 #bienEtre{
@@ -281,15 +302,15 @@
 }
 
 #explication-bienEtre, #explication-biodiversité, #explication-bienManger{
-    width: 200px; /*Changement*/
-    height: 200px; /*Changement*/
+    width: 210px; /*changement*/
+    height: 210px; /*changement*/
     display: flex; 
     flex-direction: column;
     align-items: center;
-    justify-content: center; /*Changement*/
+    justify-content: center; 
     background-color: #FACFCE;
     font-size: 1em;
-    padding: 3vw; /*Changement*/
+    padding: 3vw; 
 }
 
 #explication-bienEtre{
@@ -306,8 +327,8 @@
 
 #leftDiv #explication-biodiversité{
     position: absolute; 
-    top: 49vh; /*Changement*/
-    left: 32vw; /*Changement*/
+    top: 47vh; /*changement*/
+    left: 32vw;
 }
 
 #piliersContainer h3{
@@ -368,7 +389,11 @@
 
 @media screen and (max-width: 1024px){
     #piliersSection{
-        margin: 7vh 0 3vh 0; /*Changement*/
+        margin: 7vh 0 3vh 0; 
+    }
+
+    #piliersSection h2{
+        font-size: 4em;
     }
 
     #piliersTexte{
@@ -378,6 +403,7 @@
 
     #piliersTexte p{
         margin: 5vw;
+        font-size: 1.5em; /*changement*/
     }
 
     #piliersContainer{
@@ -404,11 +430,16 @@
         padding: 5vw;
     }
 
+    .explicationPiliers p {
+        font-size: 1.4em; /*changement*/
+    }
+
     .explicationPiliers h3{
         background-color: #DD897A;
         color: #ffffff;
         text-transform: uppercase;
         padding: 1vw;
+        font-size: 2em; /*changement*/
     }
 
     .leafContainer{
@@ -424,41 +455,53 @@
 
 @media screen and (max-width: 768px){
     #piliersSection{
-        margin: 7vh 0 25vh 0; /*Changement*/
+        margin: 7vh 0 25vh 0; 
     }
 
-    #piliersTexte p{
-        font-size: 1.06em;
+    .explicationPiliers p{
+        font-size: 1.7em; /*changement*/
     }
 }
 
 @media screen and (max-width: 414px){
-    #piliersSection{
-        margin: 7vh 0 70vh 0; /*Changement*/
-    }  
+    #piliersSection h2{
+        font-size: 6em; /*changement*/
+    }
 
     #piliersTexte p{
-        font-size: 1em;
+        font-size: 2.5em; /*changement*/
+    }
+
+    .leafContainer img{
+        width: 45vw; /*changement*/
+        object-fit: cover; /*changement*/
+    }
+
+    #bienEtreResponsive, #bienMangerResponsive, #biodiversiteResponsive{
+        height: 25vh; /*changement*/
+    }
+
+    .explicationPiliers{
+        font-size: 1.5em; /*changement*/
     }
 }
 
 @media screen and (max-width: 320px){
     #piliersSection{
-        margin: 7vh 0 110vh 0; /*Changement*/
+        margin: 7vh 0 35vh 0; /*changement*/
     } 
 
     #piliersTexte p{
-        font-size: 0.875em;
+        font-size: 3em; /*changement*/
     }
 
-    .explicationPiliers h3{
-        font-size: 1.5em;
+    .explicationPiliers{
+        font-size: 1.7em; /*changement*/
     }
 
-    .explicationPiliers p {
-        font-size: 0.875em;
+    #bienEtreResponsive, #bienMangerResponsive, #biodiversiteResponsive{
+        height: 28vh; /*changement*/
     }
-    
 }
 
 /* Section Potagers */
@@ -579,11 +622,11 @@
     }
 
     #potagersText p{
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     #potagersArrow{
-        top: 52vh; 
+        top: 54vh; /*changement*/
     }
 
     #commentBox{
@@ -606,7 +649,7 @@
     }
 
     #potagersText{
-        width: 55vw;
+        width: 50vw;
         margin-left: 15vw;
         margin-top: 38vw;
     }
@@ -644,7 +687,8 @@
     }
 
     #potagersText p{
-        font-size: 3.5em;
+        font-size: 3em; /*changement*/
+        padding: 1vw; /*changement*/
     }
 
     #potagersText{
@@ -686,7 +730,7 @@
     }
 
     #potagersText p{
-        font-size: 4em;
+        font-size: 3.5em;
     }
 
     #potagersText{
@@ -697,8 +741,8 @@
     }
 
     #enfantsaupotager{
-        width: 90vw;
-        height: 90vw;
+        width: 80vw; /*changement*/
+        height: 80vw; /*changement*/
     }
 
     #commentBox{
@@ -958,7 +1002,7 @@
     #pinkBlock{
         top: 0vh;
         height: 270vh;
-        width: 80%;  
+        width: 60%;  /*changement*/
     }
 
     #commentçamarche{
@@ -970,34 +1014,34 @@
     }
 
     #commentçamarche .commentStep .commentImg{
-        width: 90vw; 
-        height: 90vw; 
+        width: 75vw; /*changement*/
+        height: 75vw; /*changement*/
     }
 
     #commentçamarche .commentStep h3{
-        font-size: 7em;   
+        font-size: 6em;   
     }
 
     #commentçamarche #step1 h3{
-        top: 40vh; 
-        right: 15vw;
+        top: 36vh; 
+        right: 17vw; /*changement*/
         padding: 2vw;
     }
 
     #commentçamarche #step2 h3{
-        top: 40vh; 
-        right: -20vw;
+        top: 36vh; 
+        right: -15vw;
         padding: 2vw 6vw 2vw 6vw;
     }
 
     #commentçamarche #step3 h3{
-        top: 45vh; 
+        top: 41vh; 
         right: 30vw;
         padding: 2vw 6vw 2vw 6vw;
     }
 
     #commentçamarche .commentStep p{
-        font-size: 5em;
+        font-size: 4em;
         padding: 0;
     }
 }
@@ -1008,7 +1052,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 70vh; /*Changement*/
+    height: 70vh;
     width: 80%; 
     margin-left: 10vw;
 }
@@ -1030,7 +1074,7 @@
 }
 
 .iconeImg img{
-    width: 90%; /*Changement*/
+    width: 90%; 
 }
 
 .iconeTitle{
@@ -1041,7 +1085,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1.125em; /*Changement*/
+    font-size: 1.125em; 
 }
 
 .iconeParagraph{
@@ -1078,7 +1122,7 @@
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    padding: 11vh 2vw 2vh 2vw; /*Changement*/
+    padding: 11vh 2vw 2vh 2vw;
     margin-top: 3vw;
     font-size: 1.125em;
 }
@@ -1111,8 +1155,6 @@ h3{
     margin-top: 2vh; 
 }
 
-/* @media screen and (max-width: 800px){} */
-
 /* Section Supplément */
 
 #supplement{
@@ -1121,7 +1163,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4vw; /*Changement*/
+    margin-top: 4vw; 
     
 }
 
@@ -1162,23 +1204,28 @@ h3{
 
 #imageMallette img{
     border-radius: 50%;
-    object-fit: cover; /*Changement*/
+    width: 19.4vw; /*Changement*/
+    height: 19.4vw; /*Changement*/
+    object-fit: cover; 
 }
 
 #imageEvenement img{
     border-radius: 50%;
-    object-fit: cover; /*Changement*/
+    width: 19.4vw; /*Changement*/
+    height: 19.4vw; /*Changement*/
+    object-fit: cover; 
 }
 
 #imageMallette button {
     position: absolute;
-    bottom: 18vh; /*Changement*/
-    left: 30vw; /*Changement*/
+    bottom: 24vh; 
+    left: 30vw; 
 }
 
 #imageEvenement button {
     position: absolute;
-    bottom: 18vh; /*Changement*/
-    left: 65vw;
+    bottom: 24vh; /*Changement*/
+    left: 65vw; /*Changement*/
 }
+
 
