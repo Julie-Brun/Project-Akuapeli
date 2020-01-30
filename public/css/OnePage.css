@@ -484,7 +484,6 @@
     .explicationPiliers{
         font-size: 1.5em; /*changement*/
     }
-
 }
 
 @media screen and (max-width: 320px){
@@ -503,7 +502,6 @@
     #bienEtreResponsive, #bienMangerResponsive, #biodiversiteResponsive{
         height: 28vh; /*changement*/
     }
-    
 }
 
 /* Section Potagers */
