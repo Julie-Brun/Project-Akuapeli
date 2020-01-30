@@ -42,43 +42,43 @@
 
     <nav id="timeline">
         <div class="timelineContainer">
-            <div class="timelineDot section1">
-                <div class="centerDot"></div>
-            </div>
+            <a id="section1" class="timelineDot" href="#accueil">
+                <span class="centerDot"></span>
+            </a>
             <div class="timelineContent">
-                <p class="content">Akuapéli</p>
+                <p class="pContent">Akuapéli</p>
             </div>
         </div>
         <div class="timelineContainer">
-            <div class="timelineDot section2">
-                <div class="centerDot"></div>
-            </div>
+            <a id="section2" class="timelineDot" href="#piliersSection">
+                <span class="centerDot"></span>
+            </a>
             <div class="timelineContent">
-                <p class="content">Notre Vision</p>
+                <p class="pContent">Notre Vision</p>
             </div>
         </div>
         <div class="timelineContainer">
-            <div class="timelineDot section3">
-                <div class="centerDot"></div>
-            </div>
+            <a id="section3" class="timelineDot" href="#potagers">
+                <span class="centerDot"></span>
+            </a>
             <div class="timelineContent">
-                <p class="content">Les Potagers</p>
+                <p class="pContent">Les Potagers</p>
             </div>
         </div>
         <div class="timelineContainer">
-            <div class="timelineDot section4">
-                <div class="centerDot"></div>
-            </div>
+            <a id="section4" class="timelineDot" href="#formules">
+                <span class="centerDot"></span>
+            </a>
             <div class="timelineContent">
-                <p class="content">Nos Offres</p>
+                <p class="pContent">Nos Offres</p>
             </div>
         </div>
         <div class="timelineContainer">
-            <div class="timelineDot section5">
-                <div class="centerDot"></div>
-            </div>
+            <a id="section5" class="timelineDot" href="#supplement">
+                <span class="centerDot"></span>
+            </a>
             <div class="timelineContent">
-                <p class="content">En plus</p>
+                <p class="pContent">En plus</p>
             </div>
         </div>
     </nav>
@@ -88,7 +88,7 @@
 
 <!-- Section Accueil -->
 
-        <section id="accueil">
+        <section id="accueil" class="target">
             <div id="containerPrincipal">
                 <div id="boxInfo">
                     <h2>Se connecter à la nature et à soi</h2>
@@ -110,7 +110,7 @@
 <!-- Section Les piliers -->
 <!-- Faire une autre section avec photos -->
 
-        <section id="piliersSection" >
+        <section id="piliersSection" class="target">
             <h2> Notre vision</h2>
             <div id="piliersContainer">
                 <div id="leftDiv">
@@ -148,106 +148,116 @@
 
         <!-- Section Potagers -->
 
-        <section id="potagers">
-            <h2>Votre potager au fil des saisons</h2>
-            <div id="potagersContent">
-                <div class="potagersBox">
-                    <img src="public/img/enfants&potagers.png" alt="enfants au potager" id="enfantsaupotager">
-                    <div id="potagersText">
-                        <p>Dans votre école nous vous accompagnons dans la création, l’exploration et l’entretien de votre potager.</p>
-                        <p>En intérieur et en extérieur,  les enfants cultivent dans des sacs : des fruits, des légumes, des aromates et des fleurs comestibles au fil des saisons</p>
+        <section id="potagers" class="target">
+            <section id="quoi">
+                <h2>Votre potager au fil des saisons</h2>
+                <div id="potagersContent">
+                    <div class="potagersBox">
+                        <img src="public/img/enfants&potagers.png" alt="enfants au potager" id="enfantsaupotager">
+                        <div id="potagersText">
+                            <p>Dans votre école nous vous accompagnons dans la création, l’exploration et l’entretien de votre
+                                potager.</p>
+                            <p>En intérieur et en extérieur, les enfants cultivent dans des sacs : des fruits, des légumes, des
+                                aromates et des fleurs comestibles au fil des saisons</p>
+                        </div>
+                    </div>
+                    <div class="potagersBox" id="potagersBoxSize">
+                        <div class="questionBox" id="commentBox">
+                            <p>Comment ça marche?</p>
+                            <img src="public/img/gribouillis.png" alt="soulignement dessiné à la main">
+                        </div>
+                        <img src="public/img/flèche.png" id="potagersArrow">
                     </div>
                 </div>
-                <div class="potagersBox" id="potagersBoxSize">
-                    <div class="questionBox" id="commentBox">
-                        <p>Comment ça marche?</p>
-                        <img src="public/img/gribouillis.png" alt="soulignement dessiné à la main">
+            </section>
+        
+            <!-- Section Potagers - Comment ça marche? -->
+        
+            <section id="comment">
+                <div id="pinkBlock"></div>
+                <div id="commentçamarche">
+                    <div class="commentStep" id="step1">
+                        <img src="public/img/Plante1.png" alt="plante à une feuille dessinée à la main" class="commentPlant"
+                            id="plant1">
+                        <h3>confectionner</h3>
+                        <img src="public/img/confectionner.jpg" alt="enfants en train de confectionner les potagers"
+                            class="commentImg">
+                        <p>Choisissez votre taille (mini, moyen ou maxi) et personnalisez votre potager </p>
                     </div>
-                    <img src="public/img/flèche.png" id="potagersArrow">
+                    <div class="commentStep" id="step2">
+                        <img src="public/img/Plante2.png" alt="plante à deux feuilles dessinée à la main" class="commentPlant"
+                            id="plant2">
+                        <h3>planter</h3>
+                        <img src="public/img/planter.jpg" alt="enfants en train de planter dans le potager" class="commentImg">
+                        <p>Sélectionnez vos légumes, vos fruits, vos fleurs comestibles et aromates</p>
+                    </div>
+                    <div class="commentStep" id="step3">
+                        <img src="public/img/Plante3.png" alt="plante à trois feuilles dessinée à la main" class="commentPlant"
+                            id="plant3">
+                        <h3>déguster</h3>
+                        <img src="public/img/enfants&potagers.png" alt="enfants" class="commentImg">
+                        <p>Récoltez & Régalez vos papilles, Récoltez & Régalez vos papilles</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Section Potagers - Comment ça marche? -->
-
-        <section id="comment">
-            <div id="pinkBlock"></div>
-            <div id="commentçamarche">
-                <div class="commentStep" id="step1">
-                    <img src="public/img/Plante1.png" alt="plante à une feuille dessinée à la main" class="commentPlant" id="plant1">
-                    <h3>confectionner</h3>
-                    <img src="public/img/confectionner.jpg" alt="enfants en train de confectionner les potagers" class="commentImg">
-                    <p>Choisissez votre taille (mini, moyen ou maxi) et personnalisez votre potager </p>
+            </section>
+        
+            <!-- Section Potagers - Icônes -->
+        
+            <section id="icones">
+                <div class="iconeBox">
+                    <div class="iconeImg">
+                        <img src="public/img/enfantparent.png">
+                    </div>
+                    <div class="iconeTitle">
+                        <h4>Conçu par et pour les enfants</h4>
+                    </div>
+                    <div class="iconeParagraph">
+                        <p>Le potager est adapté à la morphologie des enfants et leur permet d’acquérir les gestes de jardinage
+                            dès 2 ans. </p>
+                    </div>
                 </div>
-                <div class="commentStep" id="step2">
-                    <img src="public/img/Plante2.png" alt="plante à deux feuilles dessinée à la main" class="commentPlant" id="plant2">
-                    <h3>planter</h3>
-                    <img src="public/img/planter.jpg" alt="enfants en train de planter dans le potager" class="commentImg">
-                    <p>Sélectionnez vos légumes, vos fruits, vos fleurs comestibles et aromates</p>
+                <div class="iconeBox">
+                    <div class="iconeImg">
+                        <img src="public/img/adaptable.png">
+                    </div>
+                    <div class="iconeTitle">
+                        <h4>Adapté aux petits espaces</h4>
+                    </div>
+                    <div class="iconeParagraph">
+                        <p>Transportable, le potager s’adapte à tous vos espaces, meubles, cours. </p>
+                    </div>
                 </div>
-                <div class="commentStep" id="step3">
-                    <img src="public/img/Plante3.png" alt="plante à trois feuilles dessinée à la main" class="commentPlant" id="plant3">
-                    <h3>déguster</h3>
-                    <img src="public/img/enfants&potagers.png" alt="enfants" class="commentImg">
-                    <p>Récoltez & Régalez vos papilles, Récoltez & Régalez vos papilles</p>
+                <div class="iconeBox">
+                    <div class="iconeImg">
+                        <img src="public/img/personnalisable.png">
+                    </div>
+                    <div class="iconeTitle">
+                        <h4>Personnalisable</h4>
+                    </div>
+                    <div class="iconeParagraph">
+                        <p>Scratcher - déscratcher à l’infini vos motifs selon l’envie des enfants et créer un potager qui vous
+                            ressemble
+                            avec des tissus de récupération. </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Section Potagers - Icônes -->
-
-        <section id="icones">
-            <div class="iconeBox">
-                <div class="iconeImg">
-                    <img src="public/img/enfantparent.png">
+                <div class="iconeBox">
+                    <div class="iconeImg">
+                        <img src="public/img/transportable.png">
+                    </div>
+                    <div class="iconeTitle">
+                        <h4>Ultra-résistant</h4>
+                    </div>
+                    <div class="iconeParagraph">
+                        <p>Les sacs ont une durée de vie de minimum 6 ans et sont composés de matières tissés très solide.</p>
+                    </div>
                 </div>
-                <div class="iconeTitle">
-                    <h4>Conçu par et pour les enfants</h4>
-                </div>
-                <div class="iconeParagraph">
-                    <p>Le potager est adapté à la morphologie des enfants et leur permet d’acquérir les gestes de jardinage dès 2 ans. </p>
-                </div>
-            </div>
-            <div class="iconeBox">
-                <div class="iconeImg">
-                    <img src="public/img/adaptable.png">
-                </div>
-                <div class="iconeTitle">
-                    <h4>Adapté aux petits espaces</h4>
-                </div>
-                <div class="iconeParagraph">
-                    <p>Transportable, le potager  s’adapte  à tous vos espaces, meubles, cours. </p>
-                </div>
-            </div>
-            <div class="iconeBox">
-                <div class="iconeImg">
-                    <img src="public/img/personnalisable.png">
-                </div>
-                <div class="iconeTitle">
-                    <h4>Personnalisable</h4>
-                </div>
-                <div class="iconeParagraph">
-                    <p>Scratcher - déscratcher à l’infini vos motifs selon l’envie des enfants et créer un potager qui vous ressemble
-                avec des tissus de récupération. </p>
-            </div>
-            </div>
-            <div class="iconeBox">
-                <div class="iconeImg">
-                    <img src="public/img/transportable.png">
-                </div>                
-                <div class="iconeTitle">
-                    <h4>Ultra-résistant</h4>
-            </div>
-            <div class="iconeParagraph">
-                <p>Les sacs ont une durée de vie de minimum 6 ans et sont composés de matières tissés très solide.</p>
-            </div>
-            </div>
+            </section>
         </section>
 
         <!-- Section Nos Formules -->
 
-        <h2>Nos Formules</h2>
-        <section id="formules">
+        <section id="formules" class="target">
+            <h2>Nos Formules</h2>
                 <div id="offres">
                     <div id="découverte">
                         <h3>DECOUVERTE</h3>
@@ -281,7 +291,7 @@
 
         <!-- Section Suppléments -->
 
-        <section id="supplement" >
+        <section id="supplement" class="target">
             <p>Pour aller plus loin dans l’exploration du potager,
                 découvrez nos mallettes pédagogiques ainsi que nos ateliers 
                 vous premettant de marquer un événement au sein de votre structure</p>    

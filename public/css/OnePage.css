@@ -69,11 +69,17 @@
     margin: 0;
 }
 
-#timeline .timelineContainer .timelineContent .content {
+#timeline .timelineContainer .timelineContent .pContent {
     opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
-#timeline .timelineContainer .timelineContent .content.activeContent {
+#timeline .timelineContainer .timelineContent .pContent.activeContent {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+#timeline .timelineContainer .timelineContent .pContent.stayContent {
     opacity: 1;
 }
 
