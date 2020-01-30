@@ -163,7 +163,7 @@ h2{
     border-radius: 50%;
     background-color: #ffffff;
     border: 1.5px  #3E2278 solid;
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     color: #3E2278;
 }
 
@@ -172,7 +172,7 @@ h2{
 }
 
 .lirePlus p {
-    font-size: 0.875;
+    font-size: 1vw;
     font-weight: 600;
     margin: 0;
 }
