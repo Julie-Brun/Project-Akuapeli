@@ -1140,7 +1140,7 @@ h3{
 }
 
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){    
     #formules{
         height: 80vh;
     }
@@ -1155,14 +1155,25 @@ h3{
 }
 
 @media screen and (max-width: 425px){
+    #formulesTitle{
+        font-size: 10vw;
+    }
+
     #offres{
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     #classique, #decouverte, #essentielle{
         height: 40vh;
-        width: 60%;
-    }
+        width: 40%;
+        flex: 0 0 auto;
+        /* margin: 0 10vw; */
+    }   
 }
 
 @media screen and (max-width: 375px){}
