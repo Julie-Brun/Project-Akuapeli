@@ -55,7 +55,7 @@ $(document).ready(function(){
 
     $(window).on("scroll", function() {
         $(".target").each(function() {
-            if($(window).scrollTop() >= $(this).offset().top) {
+            if($(window).scrollTop() >= $(this).offset().top - 50) {
                 var id = $(this).attr("id");
                 $("#timeline .timelineContainer a").removeClass("activeDot");
                 $("#timeline .timelineContainer a").siblings(".timelineContent").children(".pContent").removeClass("stayContent");
@@ -64,8 +64,5 @@ $(document).ready(function(){
             }
         });
     });
-
-    // $("#nav nav a[href=#"+ id +"]").addClass("active");
-
 
 })

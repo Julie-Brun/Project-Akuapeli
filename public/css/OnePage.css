@@ -73,13 +73,13 @@
 
 #timeline .timelineContainer .timelineContent .pContent {
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
     text-shadow: 1px 1px 0px rgba(255, 255, 255, 1)
 }
 
 #timeline .timelineContainer .timelineContent .pContent.activeContent {
     opacity: 1;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
     text-shadow: 1px 1px 0px rgba(255, 255, 255, 1)
 }
 
