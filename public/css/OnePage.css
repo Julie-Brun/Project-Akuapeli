@@ -1154,7 +1154,16 @@ h3{
     }
 }
 
-@media screen and (max-width: 425px){}
+@media screen and (max-width: 425px){
+    #offres{
+        width: 100%;
+    }
+
+    #classique, #decouverte, #essentielle{
+        height: 40vh;
+        width: 60%;
+    }
+}
 
 @media screen and (max-width: 375px){}
 
