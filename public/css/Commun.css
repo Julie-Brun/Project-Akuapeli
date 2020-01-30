@@ -12,21 +12,29 @@ body {
     font-size: 1.125vw;
 }
 
+/* Header SideBar */
+
+#menuSideBar {
+    display: none;
+}
+
+#burgerMenu{
+    display: none;
+}
+
 /* Header */
 
 header {
     width: 100%;
     height: 14vh;
-    background: #FDEDED;
+    background-color: #FDEDED;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-family: 'Barlow', sans-serif;
     font-size: 1.125em;
-}
-
-header #menu {
-    display: none;
+    position: fixed;
+    z-index: 3;
 }
 
 header .headerSection {
@@ -59,7 +67,7 @@ header #logo h1 {
     color: #DD897A;
 }
 
-/* Responsive Hearder */
+/* Responsive Header */
 
 @media screen and (max-width: 1366px){
     header #logo{
@@ -77,49 +85,106 @@ header #logo h1 {
     header {
         height: 10vh;
     }
+
+    header #logo h1 {
+        font-size: 3em;
+    }
+
+    header .headerSection{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .headerSection a{
+        font-size: 1.7em;
+    }
 }
 
 @media screen and (max-width: 768px){
-    header {
-        font-size: 0.875em;
+    .headerSection a{
+        font-size: 1.7em;
     }
 }
 
 @media screen and (max-width: 414px){
-    
-    .headerSection a{
+
+    #headerContainer .headerSection{
         display: none;
     }
 
-    header #menu {
-        display: flex;
-        width: 10%;
-    }
-
-    header #logo {
-        width: 40%;
-        height: 14vh;
-        display: flex;
-        flex-direction: column;
+    #headerContainer{
+        display: flex; 
         justify-content: center;
         align-items: center;
-    }
-    
-    header #logo h1 {
-        margin: 0;
-        font-family: 'Schoolbell', cursive;
-        font-size: 2.5em;
-        color: #DD897A;
+        position: fixed;
+        z-index: 3;
     }
 
-    #imageLogo{
-    width: 15%;
-    object-fit: cover;
+    #burgerMenu{
+        display: flex; 
+        width: 15%;
+        object-fit: cover;
+        margin: 0;
+        position: absolute;
+        left: 5vw;
+    }
+
+    #headerContainer #logo #imageLogo{
+        width: 25%;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    #headerContainer #logo h1{
+        font-size: 4em;
+        margin: 0;
+    }
+
+    /* Menu SideBar */
+
+    #menuSideBar{
+        width: 100%;
+        height: 100%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 15;
+        position: fixed;
+        background-color:#FACFCE ;
+        transform: translateX(-100%);
+        transition: 1s;
+    }
+
+    #burgerSideBar{
+        width: 15%;
+        height: 8%;
+        object-fit: cover;
+        margin-left: 4vw;
+    }
+
+    #navBurger{ 
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 45%;
+        margin-left: 6vw;
+    }
+
+    #navBurger a{
+        text-decoration: none;
+        font-size: 8em;
+    }
+
+    .open{
+        transform: translateX(0%)!important;
+        transition: 1s;
     }
 }
 
 @media screen and (max-width: 320px){}
-
 
 /* Section principale */
 
@@ -149,7 +214,7 @@ h2{
 
 .questionBox p{
     font-family: 'Indie Flower', cursive;
-    font-size: 1.75em; /*Changement*/
+    font-size: 1.75em; 
     margin: 5px;
 }
 
@@ -182,32 +247,26 @@ h2{
     background-color: #674F98;
     color: #ffffff;
     padding: 1vw 3vw;
-    border: none; /*Changement*/
+    border: none; 
 }
 
 /* Footer */
 
-footer {
+#footerContainer{
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #FDEDED;
+    background-color: #FDEDED;
     font-family: 'Barlow', sans-serif;
 }
 
 /* Newsletter du Footer */
 
-
-#footerContainer{
-    height: 80vh;
-}
-
-footer #newsletter {
+#newsletter {
     width: 51vw;
-    height: 28vh;
     margin: 4% 0 4% 0;
     padding-bottom: 3vh;
     display: flex;
@@ -215,7 +274,7 @@ footer #newsletter {
     justify-content: center;
     align-items: center;
     background: #FACFCE;
-    font-size: 1.5em; /*Changement*/
+    font-size: 1.5em; 
     color: #3E2278;
 }
 
@@ -255,7 +314,6 @@ footer #infosFooter {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin-bottom: 4vh;
 }
 
 footer #infosFooter p {
@@ -267,7 +325,7 @@ footer #infosFooter p {
 
 footer #infosFooter ul li {
     font-family: 'Barlow', sans-serif;
-    font-size: 1.125em; /*Changement*/
+    font-size: 1.125em; 
     list-style: none;
 }
 
@@ -281,4 +339,57 @@ footer #infosFooter div {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/* Footer Responsive */
+
+@media screen and (max-width: 1024px){
+    #footerContainer{
+        height: 30vh;
+    }
+
+    #arbo, #etc a{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #footerContainer{
+        height: 40vh;
+    }
+
+    #newsletter{
+        margin-top: 2vw;
+    }
+
+    #socialNetworks a{
+        margin-right: 1vw;
+    }
+}
+
+@media screen and (max-width: 414px){
+    #footerContainer{
+        height: 30vh;
+    }
+
+    #newsletter{
+        width: 100%;
+        height: 35vh;
+        margin: 0;
+    }
+
+    #newsletterForm{
+        width: 30vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #socialNetworks img{
+        width: 90%;
+    }
+
+    footer #newsletter #newsletterForm #input input::placeholder {
+        font-size: 1em;
+    }
 }
