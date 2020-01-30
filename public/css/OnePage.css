@@ -3,7 +3,6 @@
 /* Scrolldown */
 
 #scrolldown{
-    border: 2px solid tomato;
     display: flex;
     flex-direction: column;
     justify-content: center;
