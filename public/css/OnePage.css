@@ -1104,7 +1104,7 @@
     background-color: #AC9FC6;
 }
 
-h3{
+#offres h3{
     font-size: 2.750vw; 
     font-weight: 600;
     margin: 0; 
@@ -1156,11 +1156,16 @@ h3{
 
 @media screen and (max-width: 425px){
     #formulesTitle{
-        font-size: 10vw;
+        font-size: 6vw;
+    }
+
+    #formules{
+        height: 70vh;
     }
 
     #offres{
         width: 100%;
+        height: 70vh;
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
@@ -1168,15 +1173,115 @@ h3{
         -webkit-overflow-scrolling: touch;
     }
 
+    #offres h3{
+        font-size: 7.5vw;
+    }
+
     #classique, #decouverte, #essentielle{
-        height: 40vh;
-        width: 40%;
+        height: 30vh;
+        width: 43%;
         flex: 0 0 auto;
-        /* margin: 0 10vw; */
+        font-size: 4.5vw;
+        text-align: center;
+        padding: 6vh 2vw 4vh 2vw; 
     }   
+
+    #classique{
+        margin: 0 15%;
+    }
+
+    #decouverte{
+        margin-right: 15%;
+    }
+
+    #classique .lirePlus{
+        width: 18vw;
+        height: 18vw;
+    }
+
+    #classique .lirePlus p{
+        font-size: 0.8em;
+    }
+
+    #decouverte .lirePlus{
+        width: 18vw;
+        height: 18vw;
+    }
+
+    #decouverte .lirePlus p{
+        font-size: 0.8em;
+    }
+
+    #essentielle .lirePlus{
+        width: 18vw;
+        height: 18vw;
+    }
+
+    #essentielle .lirePlus p{
+        font-size: 0.8em;
+    }    
 }
 
-@media screen and (max-width: 375px){}
+@media screen and (max-width: 375px){
+    #formulesTitle{
+        font-size: 6vw;
+    }
+
+    #formules{
+        height: 80vh;
+    }
+
+    #offres{
+        height: 80vh;;
+    }
+
+    #offres h3{
+        font-size: 7.750vw;
+    }
+
+    #classique, #decouverte, #essentielle{
+        height: 40vh;
+        width: 48%;
+        font-size: 5.5vw; 
+    }   
+
+    #classique{
+        margin: 0 15%;
+    }
+
+    #decouverte{
+        margin-right: 15%;
+    }
+
+    #classique .lirePlus{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #classique .lirePlus p{
+        font-size: 1em;
+    }
+
+    #decouverte .lirePlus{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #decouverte .lirePlus p{
+        font-size: 1em;
+
+    }
+
+    #essentielle .lirePlus{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    #essentielle .lirePlus p{
+        font-size: 1em;
+
+    }    
+}
 
 
 
