@@ -1,5 +1,121 @@
 /* Timeline */
 
+#timeline {
+    width: 10%;
+    height: 25%;
+    position: fixed;
+    top: 40%;
+    left: 2%;
+    z-index: 10;
+}
+
+#timeline::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background: #3E2278;
+    top: 10%;
+    bottom: 10%;
+    left: 9%;
+    z-index: 5;
+}
+
+#timeline .timelineContainer {
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timeline .timelineContainer .timelineDot {
+    width: 14%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(221, 137, 122, 0.4);
+    transition: background 0.5s ease;
+    box-shadow: #ffffff 0px 0px 0px 2px;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#timeline .timelineContainer .timelineDot:hover {
+    background: rgba(221, 137, 122, 1);
+    transition: background 0.5s ease;
+}
+
+#timeline .timelineContainer .timelineDot.activeDot {
+    background: rgba(221, 137, 122, 1);
+}
+
+#timeline .timelineContainer .timelineDot .centerDot {
+    width: 36%;
+    height: 35%;
+    background: #3E2278;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+#timeline .timelineContainer .timelineContent {
+    width: 75%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    padding: 0 0 0 7%;
+    margin: 0;
+}
+
+#timeline .timelineContainer .timelineContent .pContent {
+    font-size: 0.8em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 1)
+}
+
+#timeline .timelineContainer .timelineContent .pContent.activeContent {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 1)
+}
+
+#timeline .timelineContainer .timelineContent .pContent.stayContent {
+    opacity: 1;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 1)
+}
+
+/* Responsive Timeline */
+
+@media screen and (max-width: 1024px){
+    #timeline::after {
+        left: 8%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #timeline::after {
+        left: 8%;
+    }
+}
+
+@media screen and (max-width: 414px){
+    #timeline {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #timeline {
+        display: none;
+    }
+}
+=======
 /* Scrolldown */
 
 #scrolldown{
@@ -74,7 +190,6 @@
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
-
 
 /* Partie Accueil */
 
@@ -581,7 +696,7 @@
 
 /* Section Potagers */
 
-#potagers{
+#quoi{
     width: 100%;
     display: flex;
     flex-direction: column;

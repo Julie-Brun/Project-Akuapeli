@@ -7,10 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="public/css/OnePage.css">
     <link rel="stylesheet" href="public/css/Commun.css">
-    <script type="text/javascript" src="public/js/OnePage.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Barlow:400,400i,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,400i,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Schoolbell&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="public/js/OnePage.js"></script>
     <title>Akuapéli</title>
 </head>
 
@@ -52,6 +53,49 @@
     </header>
 
     <!-- Timeline -->
+  
+    <nav id="timeline">
+        <div class="timelineContainer">
+            <a id="section1" class="timelineDot" href="#accueil">
+                <span class="centerDot"></span>
+            </a>
+            <div class="timelineContent">
+                <p class="pContent">Akuapéli</p>
+            </div>
+        </div>
+        <div class="timelineContainer">
+            <a id="section2" class="timelineDot" href="#piliersSection">
+                <span class="centerDot"></span>
+            </a>
+            <div class="timelineContent">
+                <p class="pContent">Notre Vision</p>
+            </div>
+        </div>
+        <div class="timelineContainer">
+            <a id="section3" class="timelineDot" href="#potagers">
+                <span class="centerDot"></span>
+            </a>
+            <div class="timelineContent">
+                <p class="pContent">Les Potagers</p>
+            </div>
+        </div>
+        <div class="timelineContainer">
+            <a id="section4" class="timelineDot" href="#formules">
+                <span class="centerDot"></span>
+            </a>
+            <div class="timelineContent">
+                <p class="pContent">Nos Offres</p>
+            </div>
+        </div>
+        <div class="timelineContainer">
+            <a id="section5" class="timelineDot" href="#supplement">
+                <span class="centerDot"></span>
+            </a>
+            <div class="timelineContent">
+                <p class="pContent">En plus</p>
+            </div>
+        </div>
+    </nav>
 
     <!-- Scrolldown -->
 
@@ -63,7 +107,7 @@
 
         <!-- Section Accueil -->
 
-        <section id="accueil">
+        <section id="accueil" class="target">
             <div id="containerPrincipal">
                 <div id="boxInfo">
                     <h2>Se connecter à la nature et à soi</h2>
@@ -84,7 +128,8 @@
 
         <!-- Section Les piliers -->
 
-        <section id="piliersSection">
+        <section id="piliersSection" class="target">
+
             <h2> Notre vision</h2>
             <div id="piliersTexte">
                 <p>Akuapéli s’est donné pour mission de créer “La génération des enfants qui s’aiment” et de mettre en
@@ -179,7 +224,8 @@
 
         <!-- Section Potagers -->
 
-        <section id="potagers">
+        <section id="potagers" class="target">
+            <section id="quoi">
             <h2>Votre potager au fil des saisons</h2>
             <div id="potagersContent">
                 <div class="potagersBox">
@@ -255,11 +301,10 @@
                 <div class="iconeParagraph">
                     <p> Nos potagers sont transportables et s’aclimatent parfaitement aux petites surfacces en intérieur comme en extérieur.</p>
                 </div>
-            </div>
-            <div class="iconeBox">
-                <div class="iconeImg">
-                    <img src="public/img/personnalisable.png">
-                </div>
+                <div class="iconeBox">
+                    <div class="iconeImg">
+                        <img src="public/img/personnalisable.png">
+                    </div>
                 <div class="iconeTitle" id="personnalisableIcone">
                     <h4>Personnalisable</h4>
                 </div>
@@ -279,11 +324,13 @@
             </div>
             </div>
         </section>
+       </section>
 
         <!-- Section Formules -->
 
-        <h2 id="formulesTitle">Découvrez nos Offres</h2>
-        <section id="formules">
+
+        <section id="formules" class="target">
+        <h2 id="formulesTitle">Découvrez nos Offres</h2>     
                 <div id="offres">
                     <div id="classique">
                         <div class="formuleText">
@@ -329,10 +376,10 @@
 
         <!-- Section Suppléments -->
 
-        <section id="supplement" >
+        <section id="supplement" class="target">
             <p>Pour aller plus loin dans l’exploration du potager,
                 découvrez nos mallettes pédagogiques ainsi que nos ateliers 
-                vous premettant de marquer un événement au sein de votre structure</p>    
+                vous permettant de marquer un événement au sein de votre structure</p>    
             <section id="sectionSupplement">      
                     <div id="containerMallette">
                         <h2>Les mallettes</h2>
