@@ -1,9 +1,23 @@
+/* Ligne Header */
+
+header .headerSection #lienOffres {
+    border-bottom: 1px solid #3E2278;
+    transition: 0.3s;
+}
+
+header .headerSection #lienOffres:hover {
+    color: #DD897A;
+    border-bottom: 1px solid #DD897A;
+}
+
+/* Offres */
+
 #offresSection{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin: 5vh 0;
+    margin: 25vh 0 15vh 0;
     position: relative;
 }
 
