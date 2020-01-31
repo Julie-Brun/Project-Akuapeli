@@ -31,8 +31,8 @@
 }
 
 #timeline .timelineContainer .timelineDot {
-    width: 14%;
-    height: 55%;
+    width: 25px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,8 +54,8 @@
 }
 
 #timeline .timelineContainer .timelineDot .centerDot {
-    width: 36%;
-    height: 35%;
+    width: 8px;
+    height: 8px;
     background: #3E2278;
     border-radius: 50%;
     z-index: 3;
@@ -1239,6 +1239,12 @@
 /* Section Potagers - Icônes */
 
 #icones{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#iconeBloc{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -1287,7 +1293,7 @@
 }
 
 @media screen and (max-width: 1024px){
-    #icones{
+    #iconeBloc{
         height: 45vh;
         margin-left: 0vw;
     }
@@ -1310,7 +1316,7 @@
 }
 
 @media screen and (max-width: 768px){
-    #icones{
+    #iconeBloc{
         height: 50vh;
     }
 
@@ -1328,7 +1334,7 @@
 }
 
 @media screen and (max-width: 414px){
-    #icones{
+    #iconeBloc{
         height: 80vh;
         width: 60vw;
         flex-flow: column wrap;
@@ -1363,7 +1369,7 @@
 }
 
 @media screen and (max-width: 320px){
-    #icones{
+    #iconeBloc{
         height: 80vh;
         width: 80vw;
     }
