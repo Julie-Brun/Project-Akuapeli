@@ -1,7 +1,6 @@
-
 window.onload = function(){
 
-    // Timeline
+// Timeline
 
     //Actions au click
     $(".timelineDot").click(function(e){ 
@@ -23,7 +22,7 @@ window.onload = function(){
     // Smooth scroll et saut vers la catégorie cliquée
     function scrollTo(target) {
         if( target.length ) {
-            $("html, body").stop().animate({scrollTop: target.offset().top}, 1500);
+            $("html, body").stop().animate({scrollTop: target.offset().top -150}, 1500);
         }
     }
 
@@ -56,7 +55,7 @@ window.onload = function(){
 
     $(window).on("scroll", function() {
         $(".target").each(function() {
-            if($(window).scrollTop() >= $(this).offset().top - 50) {
+            if($(window).scrollTop() >= $(this).offset().top -200) {
                 var id = $(this).attr("id");
                 $("#timeline .timelineContainer a").removeClass("activeDot");
                 $("#timeline .timelineContainer a").siblings(".timelineContent").children(".pContent").removeClass("stayContent");
@@ -67,7 +66,7 @@ window.onload = function(){
     });
 
 
-    // Animations feuilles Les Piliers 
+// Animations feuilles Les Piliers 
 
     document.getElementById("bienEtreLight").onmouseover = function (){
         document.getElementById("bienEtre").style.display = "flex";
@@ -104,7 +103,7 @@ window.onload = function(){
         document.getElementById("explication-biodiversité").style.opacity = "0";
     }
 
-    // Menu Burger
+// Menu Burger
 
     const button = document.getElementById("burgerMenu"); 
     const menu = document.getElementById("menuSideBar");
@@ -117,8 +116,6 @@ window.onload = function(){
     buttonSideB.addEventListener("click", function(){
         menu.classList.toggle("open");
     })
-
-}
 
 const scrollStop = function (callback) {
 
@@ -155,3 +152,7 @@ scrollStop(() => {
     const scrollDown = document.getElementById('scrolldown');
     scrollDown.style.opacity = "1";
 });
+
+}
+
+
