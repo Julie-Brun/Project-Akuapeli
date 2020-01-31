@@ -153,6 +153,3 @@ scrollStop(() => {
     scrollDown.style.opacity = "1";
 });
 
-}
-
-
