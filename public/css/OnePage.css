@@ -1071,7 +1071,7 @@
 
 @media screen and (max-width: 320px){
     #comment{
-        height: 280vh; 
+        height: 235vh; 
     }
 
     #pinkBlock{
@@ -1169,7 +1169,101 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 2%;
+}
+
+@media screen and (max-width: 1024px){
+    #icones{
+        height: 45vh;
+        margin-left: 0vw;
+    }
+
+    .iconeBox{
+        height: 50vh;
+    }
+
+    .iconeImg img{
+        width: 100%; 
+    }
+
+    .iconeTitle{
+        font-size: 1.5em; 
+    }
+    
+    .iconeParagraph p{
+        font-size: 1.125em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #icones{
+        height: 50vh;
+    }
+
+    .iconeImg img{
+        width: 90%; 
+    }
+
+    .iconeTitle{
+        font-size: 1.8em; 
+    }
+
+    .iconeParagraph p{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 414px){
+    #icones{
+        height: 80vh;
+        width: 60vw;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .iconeBox{
+        align-items: center;
+        height: 30vh;
+        width: 50%;
+    }
+
+    .iconeImg img{
+        width: 80%; 
+    }
+
+    .iconeTitle{
+        font-size: 3em;
+    }
+
+    .iconeParagraph p{
+        display: none;
+    }
+
+    #adapteIcone{
+        margin-top: 4vh;
+    }
+
+    #personnalisableIcone{
+        margin-top: 3vh;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #icones{
+        height: 80vh;
+        width: 80vw;
+    }
+
+    .iconeImg img{
+        width: 80%; 
+    }
+
+    .iconeTitle{
+        font-size: 4em;
+    }
+
+    #adapteIcone{
+        margin-top: 6vh;
+    }
 }
 
 /* Section Nos formules */
