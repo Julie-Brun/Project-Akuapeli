@@ -21,60 +21,60 @@
 
 @-webkit-keyframes pulse {
     from {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
     }
-  
+
     50% {
-      -webkit-transform: scale3d(1.05, 1.05, 1.05);
-      transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
     }
-  
+
     to {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
     }
-  }
-  
-  @keyframes pulse {
+}
+
+@keyframes pulse {
     from {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
     }
-  
+
     50% {
-      -webkit-transform: scale3d(1.05, 1.05, 1.05);
-      transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
     }
-  
+
     to {
-      -webkit-transform: scale3d(1, 1, 1);
-      transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
     }
-  }
-  
-  .pulse {
+}
+
+.pulse {
     -webkit-animation-name: pulse;
     animation-name: pulse;
-  }
+}
 
-  .animated {
+.animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-  }
+}
 
-  .animated.slow {
+.animated.slow {
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-  }
-  
-  .animated.infinite {
+}
+
+.animated.infinite {
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-  }
-  
+}
+
 
 /* Partie Accueil */
 
@@ -106,7 +106,7 @@
     z-index: 1;
     position: absolute;
     left: 47vw;
-    top: 5vh;
+    top: 8vh;
 }
 
 #boxInfo{
@@ -199,7 +199,7 @@
 
     #boxInfo h2{
         margin-left: 4vw;
-        font-size: 3.5em; /*changement*/
+        font-size: 3.5em; 
     }
 
     #blocPhotoAccueil img{
@@ -213,11 +213,11 @@
     #boxInfo #boutonViolet{
         position: absolute;
         top: 12vh;
-        font-size: 2em; /*changement*/
+        font-size: 2em; 
     }
 
     #containerTexte{
-        font-size: 1.7em; /*changement*/
+        font-size: 1.7em; 
     }
 }
 
@@ -231,25 +231,25 @@
     }
 
     #blocPhotoAccueil img{
-        width: 70vw; /*changement*/
-        left: 14vw; /*changement*/
+        width: 70vw; 
+        left: 14vw; 
     }
 
     #boxInfo h2{
-        font-size: 5em; /*changement*/
+        font-size: 5em; 
     }
 
     #boxInfo #boutonViolet{
-        top: 13vh; /*changement*/
+        top: 13vh; 
         padding: 2vw;
-        font-size: 3em; /*changement*/
+        font-size: 3em; 
     }
 
     #containerTexte{
-        font-size: 3em; /*changement*/
-        margin-top: 2vw; /*changement*/
-        text-align: center; /*changement*/
-        padding: 1vw; /*changement*/
+        font-size: 3em; 
+        margin-top: 2vw; 
+        text-align: center; 
+        padding: 1vw; 
     }
 }
 
@@ -262,23 +262,23 @@
     }
 
     #blocPhotoAccueil img{
-        width: 75vw; /*changement*/
-        left: 13vw; /*changement*/
+        width: 75vw; 
+        left: 13vw; 
     }
 
     #boxInfo h2{
-        font-size: 6em; /*changement*/
+        font-size: 6em; 
     }
 
     #boxInfo #boutonViolet{
-        top: 15vh; /*changement*/
+        top: 15vh; 
         padding: 2vw;
-        font-size: 4em; /*changement*/
+        font-size: 4em; 
     }
 
     #containerTexte{
-        font-size: 3.5em; /*changement*/
-        margin-top: 10vw; /*changement*/
+        font-size: 3.5em; 
+        margin-top: 10vw; 
     }
 }
 
@@ -290,7 +290,7 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
-    margin: 10vh 0 12vh 3vw; /*Changement*/
+    margin: 10vh 0 12vh 3vw; 
 }
 
 #piliersSection h2{
@@ -377,8 +377,8 @@
 }
 
 #explication-bienEtre, #explication-biodiversité, #explication-bienManger{
-    width: 210px; /*changement*/
-    height: 210px; /*changement*/
+    width: 210px; 
+    height: 210px; 
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -402,7 +402,7 @@
 
 #leftDiv #explication-biodiversité{
     position: absolute; 
-    top: 47vh; /*changement*/
+    top: 47vh; 
     left: 32vw;
 }
 
@@ -478,7 +478,7 @@
 
     #piliersTexte p{
         margin: 5vw;
-        font-size: 1.5em; /*changement*/
+        font-size: 1.5em; 
     }
 
     #piliersContainer{
@@ -506,7 +506,7 @@
     }
 
     .explicationPiliers p {
-        font-size: 1.4em; /*changement*/
+        font-size: 1.4em;
     }
 
     .explicationPiliers h3{
@@ -514,7 +514,7 @@
         color: #ffffff;
         text-transform: uppercase;
         padding: 1vw;
-        font-size: 2em; /*changement*/
+        font-size: 2em; 
     }
 
     .leafContainer{
@@ -534,48 +534,48 @@
     }
 
     .explicationPiliers p{
-        font-size: 1.7em; /*changement*/
+        font-size: 1.7em; 
     }
 }
 
 @media screen and (max-width: 414px){
     #piliersSection h2{
-        font-size: 6em; /*changement*/
+        font-size: 6em; 
     }
 
     #piliersTexte p{
-        font-size: 2.5em; /*changement*/
+        font-size: 2.5em; 
     }
 
     .leafContainer img{
-        width: 45vw; /*changement*/
-        object-fit: cover; /*changement*/
+        width: 45vw; 
+        object-fit: cover; 
     }
 
     #bienEtreResponsive, #bienMangerResponsive, #biodiversiteResponsive{
-        height: 25vh; /*changement*/
+        height: 25vh; 
     }
 
     .explicationPiliers{
-        font-size: 1.5em; /*changement*/
+        font-size: 1.5em; 
     }
 }
 
 @media screen and (max-width: 320px){
     #piliersSection{
-        margin: 7vh 0 35vh 0; /*changement*/
+        margin: 7vh 0 35vh 0; 
     } 
 
     #piliersTexte p{
-        font-size: 3em; /*changement*/
+        font-size: 3em; 
     }
 
     .explicationPiliers{
-        font-size: 1.7em; /*changement*/
+        font-size: 1.7em; 
     }
 
     #bienEtreResponsive, #bienMangerResponsive, #biodiversiteResponsive{
-        height: 28vh; /*changement*/
+        height: 28vh; 
     }
 }
 
@@ -701,7 +701,7 @@
     }
 
     #potagersArrow{
-        top: 54vh; /*changement*/
+        top: 54vh; 
     }
 
     #commentBox{
@@ -762,8 +762,8 @@
     }
 
     #potagersText p{
-        font-size: 3em; /*changement*/
-        padding: 1vw; /*changement*/
+        font-size: 3em; 
+        padding: 1vw; 
     }
 
     #potagersText{
@@ -816,8 +816,8 @@
     }
 
     #enfantsaupotager{
-        width: 80vw; /*changement*/
-        height: 80vw; /*changement*/
+        width: 80vw; 
+        height: 80vw; 
     }
 
     #commentBox{
@@ -1077,7 +1077,7 @@
     #pinkBlock{
         top: 0vh;
         height: 230vh;
-        width: 60%;  /*changement*/
+        width: 60%;  
     }
 
     #commentçamarche{
@@ -1089,8 +1089,8 @@
     }
 
     #commentçamarche .commentStep .commentImg{
-        width: 75vw; /*changement*/
-        height: 75vw; /*changement*/
+        width: 75vw; 
+        height: 75vw; 
     }
 
     #commentçamarche .commentStep h3{
@@ -1099,7 +1099,7 @@
 
     #commentçamarche #step1 h3{
         top: 36vh; 
-        right: 17vw; /*changement*/
+        right: 17vw; 
         padding: 2vw;
     }
 
@@ -1181,6 +1181,7 @@
     flex-direction: column;
     align-items: center;
     background-image: url(../img/Offres.jpg);
+    background-size: cover;
 }
 
 #offres{
@@ -1239,7 +1240,6 @@ h3{
     flex-direction: column;
     align-items: center;
     margin-top: 4vw; 
-    
 }
 
 #supplement p {
@@ -1279,28 +1279,177 @@ h3{
 
 #imageMallette img{
     border-radius: 50%;
-    width: 19.4vw; /*Changement*/
-    height: 19.4vw; /*Changement*/
+    width: 19.4vw; 
+    height: 19.4vw; 
     object-fit: cover; 
 }
 
 #imageEvenement img{
     border-radius: 50%;
-    width: 19.4vw; /*Changement*/
-    height: 19.4vw; /*Changement*/
+    width: 19.4vw; 
+    height: 19.4vw; 
     object-fit: cover; 
 }
 
 #imageMallette button {
     position: absolute;
     bottom: 24vh; 
-    left: 30vw; 
+    left: 29vw; 
 }
 
 #imageEvenement button {
     position: absolute;
-    bottom: 24vh; /*Changement*/
-    left: 65vw; /*Changement*/
+    bottom: 24vh; 
+    left: 64vw; 
 }
 
+/* Responsive Suppléments */
 
+@media screen and (max-width: 1024px){
+    #supplement{
+        height: 55vh;
+    }
+
+    #containerMallette h2{
+        font-size: 4em;
+    }
+
+    #containerEvenements h2{
+        font-size: 4em;
+    }
+
+    #supplement p {
+        width: 50vw;
+        font-size: 1.8em;
+        text-align: none;
+    }
+
+    #imageMallette img{
+        border-radius: 50%;
+        width: 24vw; 
+        height: 24vw; 
+        object-fit: cover; 
+    }
+    
+    #imageEvenement img{
+        border-radius: 50%;
+        width: 24vw; 
+        height: 24vw; 
+        object-fit: cover; 
+    }
+
+    #imageMallette .lirePlus{
+        width: 8vw;
+        height: 8vw;
+    }
+
+    #imageEvenement .lirePlus{
+        width: 8vw;
+        height: 8vw;
+    }
+
+    #imageMallette .lirePlus p{
+        font-size: 1em;
+    }
+
+    #imageEvenement .lirePlus p{
+        font-size: 1em;
+    }
+
+    #imageMallette button {
+        bottom: 6vh; 
+        left: 21vw; 
+    }
+    
+    #imageEvenement button {
+        bottom: 6vh; 
+        left: 71vw; 
+    }
+}
+
+@media screen and (max-width: 768px){
+    #supplement{
+        height: 60vh;
+    }
+
+    #imageMallette button {
+        bottom: 10vh; 
+        left: 21vw; 
+    }
+    
+    #imageEvenement button {
+        bottom: 10vh; 
+        left: 71vw; 
+    }
+}
+
+@media screen and (max-width: 414px){
+    #sectionSupplement{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 3vh;
+    }
+
+    #supplement{
+        height: 155vh;
+    }
+
+    #supplement p {
+        width: 90vw;
+        font-size: 3.5em;
+    }
+    
+    #containerEvenements{
+        margin-top: 7vh;
+    }
+
+    #containerMallette h2{
+        font-size: 6em;
+    }
+
+    #containerEvenements h2{
+        font-size: 6em;
+    }
+
+    #imageMallette, #imageEvenement{
+        margin-top: 2vh;
+    }
+
+    #imageMallette img{
+        width: 70vw; 
+        height: 70vw; 
+    }
+    
+    #imageEvenement img{
+        width: 70vw; 
+        height: 70vw; 
+    }
+
+    #imageMallette .lirePlus{
+        width: 21vw;
+        height: 21vw;
+    }
+
+    #imageEvenement .lirePlus{
+        width: 21vw;
+        height: 21vw;
+    }
+
+    #imageMallette .lirePlus p{
+        font-size: 1em;
+    }
+
+    #imageEvenement .lirePlus p{
+        font-size: 1em;
+    }
+
+    #imageMallette button {
+        bottom: 45vh; 
+        left: 40vw; 
+    }
+    
+    #imageEvenement button {
+        bottom: -22vh; 
+        left: 40vw; 
+    }
+}
