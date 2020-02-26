@@ -191,6 +191,12 @@
     animation-iteration-count: infinite;
 }
 
+@media screen and (max-width: 414px){
+    #scrolldown {
+        display: none;
+    }
+}
+
 /* Partie Accueil */
 
 #accueil{
